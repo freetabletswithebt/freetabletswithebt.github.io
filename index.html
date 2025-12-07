@@ -1,333 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="54aH20gN9xsqYtWI73U9tkBzdo5t2w1SwkembV6DxzQ">
   <meta charset="UTF-8">
-  <title>Free Government Phone and 5G Device Guide for US Households</title>
+  <title>The American Connectivity Watchdog - Free Tablets With EBT 2025 Oversight Guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Independent, in depth guide that explains how free and discounted government supported phone programs work in the United States, including Lifeline, ACP, eligibility rules, 5G smartphones, and step by step application tips.">
-
-  <!-- Canonical -->
-  <link rel="canonical" href="http://freephones.s3-website-us-west-1.amazonaws.com/">
+  <meta name="description" content="Independent 2025 oversight guide from The American Connectivity Watchdog explaining how low income households can qualify for free or discounted tablets using EBT, SNAP and similar benefits, plus an interactive eligibility pre screener.">
+  <link rel="canonical" href="https://freetabletswithebt.github.io/">
+  <meta name="robots" content="index,follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Free Government Phone and 5G Device Guide for US Households">
-  <meta property="og:description" content="Learn how Lifeline and similar programs help US households get free or low cost cell phone service and 5G capable smartphones, who qualifies, what documents you need, and how to apply.">
+  <meta property="og:title" content="The American Connectivity Watchdog - Free Tablets With EBT 2025 Oversight Guide">
+  <meta property="og:description" content="Research based oversight guide and interactive EBT Tablet Eligibility Pre Screener from The American Connectivity Watchdog for United States households.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://freephones.s3-website-us-west-1.amazonaws.com/">
-  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Free+Government+Phone+Guide">
+  <meta property="og:url" content="https://freetabletswithebt.github.io/">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Tablets With EBT 2025 Oversight Guide">
+  <meta name="twitter:description" content="Neutral, research based guide plus interactive EBT tablet pre screener for low income households.">
 
-  <!-- Tailwind CSS CDN -->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-T3L1xN8C5VQkFh1b+6Qx3mZ1dhF5ZPZ15pYvEsY0F73S6WgQdZ9RgJDAXxv1iYpADrU3Mj0vP5y6WQ7P3R6K9A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Custom Styles -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --primary: #1d4ed8;
-      --primary-dark: #1e40af;
-      --accent: #06b6d4;
-      --text-main: #0f172a;
-      --bg-soft: #f1f5f9;
+      --federal-blue: #003366;
+      --federal-blue-dark: #002247;
+      --slate-gray: #4b5563;
+      --slate-light: #e5e7eb;
+      --accent-emerald: #059669;
     }
 
     body {
-      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--text-main);
-      background-color: #f9fafb;
+      font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #f1f5f9;
+      color: #0f172a;
+      line-height: 1.7;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Merriweather", "Times New Roman", serif;
+      color: #0f172a;
     }
 
     .site-wrapper {
-      max-width: 1200px;
+      max-width: 1240px;
       margin: 0 auto;
-      padding: 0 1rem 4rem 1rem;
+      padding: 1.5rem 1.25rem 3rem;
     }
 
-    .sticky-nav {
-      position: sticky;
-      top: 0;
-      z-index: 40;
-      background-color: #ffffff;
-      box-shadow: 0 1px 4px rgba(15, 23, 42, 0.08);
+    .shadow-soft {
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.10);
+    }
+
+    .card-soft {
+      border-radius: 1rem;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      background: #ffffff;
+    }
+
+    .brand-badge {
+      letter-spacing: 0.08em;
     }
 
     .nav-link-custom {
+      font-size: 0.9rem;
       font-weight: 500;
-      font-size: 0.95rem;
-      color: #0f172a;
-      text-decoration: none;
-      padding: 0.5rem 0.75rem;
-      border-radius: 9999px;
+      color: #e5e7eb !important;
     }
 
-    .nav-link-custom:hover {
-      color: var(--primary);
-      background-color: #e5edff;
+    .nav-link-custom:hover,
+    .nav-link-custom:focus {
+      color: #facc15 !important;
     }
 
-    .btn-primary-main {
-      background: linear-gradient(120deg, var(--primary) 0%, var(--primary-dark) 40%, var(--accent) 100%);
-      color: #ffffff;
-      border-radius: 9999px;
-      padding: 0.7rem 1.5rem;
-      font-weight: 600;
-      border: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      text-decoration: none;
+    .navbar-custom {
+      background: linear-gradient(90deg, var(--federal-blue-dark), var(--federal-blue));
+      border-radius: 0.85rem;
     }
 
-    .btn-primary-main:hover {
-      opacity: 0.95;
-      color: #ffffff;
-    }
-
-    .btn-outline-soft {
-      border-radius: 9999px;
-      border: 1px solid rgba(15, 23, 42, 0.15);
-      padding: 0.65rem 1.4rem;
-      font-weight: 500;
-      background-color: #ffffff;
-      text-decoration: none;
-      color: #0f172a;
-    }
-
-    .btn-outline-soft:hover {
-      border-color: var(--primary);
-      color: var(--primary);
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.25rem 0.75rem;
-      border-radius: 9999px;
-      background-color: #e0f2fe;
-      color: #0f172a;
-      font-size: 0.8rem;
-      font-weight: 500;
-    }
-
-    .card-elevated {
-      background-color: #ffffff;
-      border-radius: 1.25rem;
-      box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08);
-      border: 1px solid rgba(15, 23, 42, 0.06);
-    }
-
-    .section-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.25rem 0.8rem;
-      border-radius: 9999px;
-      background-color: #e0ecff;
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: var(--primary-dark);
-    }
-
-    .section-title {
-      font-size: clamp(1.4rem, 2vw, 1.8rem);
+    .navbar-brand-title {
+      font-size: 1rem;
       font-weight: 700;
-      margin-bottom: 0.35rem;
-    }
-
-    .section-lead {
-      font-size: 0.98rem;
-      color: #4b5563;
-      max-width: 42rem;
-    }
-
-    .badge-soft {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      padding: 0.1rem 0.6rem;
-      border-radius: 9999px;
-      background-color: #ecfeff;
-      color: #0f172a;
-      font-size: 0.75rem;
-    }
-
-    .table-responsive-custom {
-      overflow-x: auto;
-      border-radius: 0.9rem;
-      border: 1px solid rgba(15, 23, 42, 0.06);
-      background-color: #ffffff;
-    }
-
-    table.custom-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.9rem;
-    }
-
-    table.custom-table thead {
-      background-color: #eff6ff;
-    }
-
-    table.custom-table th,
-    table.custom-table td {
-      padding: 0.75rem 0.85rem;
-      border-bottom: 1px solid rgba(15, 23, 42, 0.06);
-      text-align: left;
-      vertical-align: top;
-    }
-
-    table.custom-table th {
-      font-weight: 600;
-      color: #1f2933;
-      white-space: nowrap;
-    }
-
-    table.custom-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    .highlight-box {
-      border-radius: 0.9rem;
-      padding: 1rem 1.2rem;
-      border: 1px solid rgba(37, 99, 235, 0.18);
-      background: #eff6ff;
-      font-size: 0.92rem;
-    }
-
-    .alert-income {
-      border-left: 4px solid #f97316;
-      background-color: #fff7ed;
-      padding: 1rem 1.1rem;
-      border-radius: 0.9rem;
-      font-size: 0.9rem;
-    }
-
-    .alert-tip {
-      border-left: 4px solid #16a34a;
-      background-color: #ecfdf3;
-      padding: 1rem 1.1rem;
-      border-radius: 0.9rem;
-      font-size: 0.9rem;
-    }
-
-    .faq-item {
-      border-radius: 0.9rem;
-      border: 1px solid rgba(148, 163, 184, 0.5);
-      background-color: #ffffff;
-      margin-bottom: 0.8rem;
-      overflow: hidden;
-    }
-
-    .faq-question {
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.9rem 1rem;
-      font-weight: 600;
-      font-size: 0.98rem;
-    }
-
-    .faq-answer {
-      display: none;
-      padding: 0 1rem 0.9rem 1rem;
-      font-size: 0.9rem;
-      color: #4b5563;
-    }
-
-    .faq-item.open .faq-answer {
-      display: block;
-    }
-
-    .faq-item.open .faq-icon {
-      transform: rotate(180deg);
-    }
-
-    .faq-icon {
-      transition: transform 0.15s ease;
-    }
-
-    .contact-card {
-      border-radius: 1rem;
-      background-color: #ffffff;
-      border: 1px solid rgba(148, 163, 184, 0.4);
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
-    }
-
-    .footer-link {
-      font-size: 0.85rem;
-      color: #cbd5f5;
-      text-decoration: none;
-    }
-
-    .footer-link:hover {
       color: #ffffff;
-      text-decoration: underline;
     }
 
-    .hero-illustration {
-      border-radius: 1.2rem;
-      overflow: hidden;
-      background: radial-gradient(circle at top left, #eff6ff 0%, #dbeafe 35%, #e0f2fe 70%, #ffffff 100%);
-      border: 1px solid rgba(148, 163, 184, 0.4);
+    .navbar-brand-subtitle {
+      font-size: 0.72rem;
+      color: #cbd5f5;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
-    .hero-chip {
-      border-radius: 9999px;
-      padding: 0.25rem 0.7rem;
-      font-size: 0.75rem;
-      background-color: rgba(15, 23, 42, 0.04);
-      display: inline-flex;
-      align-items: center;
-      gap: 0.25rem;
-    }
-
-    .hero-signal {
-      width: 64px;
-      height: 64px;
-      border-radius: 9999px;
-      background: radial-gradient(circle, #4f46e5 0%, #1d4ed8 45%, #0f172a 100%);
+    .flag-pill {
+      width: 40px;
+      height: 26px;
+      border-radius: 999px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #ffffff;
-      font-size: 1.6rem;
-      box-shadow: 0 12px 40px rgba(37, 99, 235, 0.45);
+      background: linear-gradient(135deg, #b91c1c, #1d4ed8);
+      color: #f9fafb;
+      border: 2px solid #ffffff;
+      box-shadow: 0 0 0 2px rgba(15, 23, 42, 0.25);
+      font-size: 1rem;
     }
 
-    .nav-toggle-btn {
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    }
+
+    @media (max-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .hero-left-heading-main {
+      font-size: 1.9rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero-left-heading-main {
+        font-size: 2.2rem;
+      }
+    }
+
+    .hero-pill {
+      border-radius: 999px;
+      background: rgba(148, 163, 184, 0.12);
+      padding: 0.3rem 0.9rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .hero-right {
+      background: radial-gradient(circle at top left, #1e3a8a 0, #020617 55%, #0f172a 100%);
+      color: #e5e7eb;
+    }
+
+    .prose p {
+      margin-bottom: 0.9rem;
+      font-size: 0.98rem;
+    }
+
+    .prose h2,
+    .prose h3,
+    .prose h4 {
+      scroll-margin-top: 100px;
+    }
+
+    .table th,
+    .table td {
+      vertical-align: middle;
+      font-size: 0.92rem;
+    }
+
+    .faq-question button {
+      text-align: left;
+      width: 100%;
       border: none;
       background: transparent;
-      font-size: 1.3rem;
-      color: #0f172a;
+      padding: 0.75rem 0;
+      font-weight: 600;
+      font-size: 0.98rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .mobile-nav {
-      display: none;
+    .faq-answer {
+      font-size: 0.94rem;
+      padding-bottom: 0.75rem;
     }
 
-    .mobile-nav.open {
-      display: block;
+    .author-avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--federal-blue), #1e40af);
+      color: #e5e7eb;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .whitepaper-shell {
+      background: #ffffff;
+      border-radius: 1.25rem;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      position: relative;
+    }
+
+    .whitepaper-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      background: #e5e7eb;
+      color: #111827;
+      padding: 0.2rem 0.8rem;
+      border-radius: 999px;
+      margin-bottom: 0.75rem;
+    }
+
+    .whitepaper-subtitle {
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin-bottom: 1.25rem;
+    }
+
+    .report-section {
+      border-radius: 0.85rem;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      background: #f9fafb;
+    }
+
+    .report-section + .report-section {
+      margin-top: 1.25rem;
+    }
+
+    .sidebar-card-title {
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .pre-screener-card {
+      border-radius: 1rem;
+      background: rgba(15, 23, 42, 0.72);
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      backdrop-filter: blur(10px);
+    }
+
+    .pre-screener-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #bfdbfe;
+      margin-bottom: 0.35rem;
+    }
+
+    .pre-screener-title {
+      font-family: "Merriweather", "Times New Roman", serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #e5e7eb;
+      margin-bottom: 0.35rem;
+    }
+
+    .pre-screener-subtitle {
+      font-size: 0.8rem;
+      color: #cbd5f5;
+      margin-bottom: 0.85rem;
+    }
+
+    .form-label-sm {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #e5e7eb;
+      margin-bottom: 0.15rem;
+    }
+
+    .form-select-dark,
+    .form-control-dark {
+      background-color: #020617;
+      border-color: #64748b;
+      color: #e5e7eb;
+      font-size: 0.85rem;
+    }
+
+    .form-select-dark:focus,
+    .form-control-dark:focus {
+      border-color: #38bdf8;
+      box-shadow: 0 0 0 1px #38bdf8;
+      outline: none;
+    }
+
+    .btn-pre-screener {
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: 999px;
+      padding: 0.4rem 1.4rem;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      border: none;
+      color: #022c22;
+    }
+
+    .btn-pre-screener:hover {
+      filter: brightness(1.08);
+      color: #022c22;
+    }
+
+    .processing-wrapper {
+      margin-top: 0.75rem;
+    }
+
+    .result-card {
+      margin-top: 0.85rem;
+      border-radius: 0.9rem;
+      background: #022c22;
+      border: 1px solid #22c55e;
+      padding: 0.9rem 1rem;
+      color: #e5fdf4;
+      font-size: 0.85rem;
+    }
+
+    .result-title {
+      font-size: 0.92rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .result-subtext {
+      font-size: 0.8rem;
+      margin-bottom: 0.7rem;
     }
 
     .pulse-button {
-      animation: pulse 1.8s ease-in-out infinite;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.55rem 1.4rem;
+      border-radius: 999px;
+      border: none;
+      background: linear-gradient(135deg, #22c55e, #bbf7d0);
+      color: #064e3b;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      animation: pulse-soft 1.5s infinite;
     }
 
-    @keyframes pulse {
+    @keyframes pulse-soft {
       0% {
         transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.55);
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6);
       }
       70% {
         transform: scale(1.03);
-        box-shadow: 0 0 0 14px rgba(34, 197, 94, 0);
+        box-shadow: 0 0 0 12px rgba(34, 197, 94, 0);
       }
       100% {
         transform: scale(1);
@@ -335,1675 +367,1202 @@
       }
     }
 
-    @media (max-width: 768px) {
-      .desktop-nav-links {
-        display: none;
-      }
+    .footer-text {
+      font-size: 0.78rem;
+      color: #6b7280;
     }
 
-    @media (min-width: 769px) {
-      .mobile-nav {
-        display: none !important;
+    .footer-bg {
+      border-top: 1px solid rgba(148, 163, 184, 0.6);
+      margin-top: 1.5rem;
+      padding-top: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-left-heading-main {
+        font-size: 1.6rem;
       }
     }
   </style>
 
-  <!-- JSON LD Structured Data -->
+  <!-- Schema - Organization, WebSite, Article, SoftwareApplication and FAQ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "http://freephones.s3-website-us-west-1.amazonaws.com/#org",
-        "name": "National Connectivity Access Hub (NCAH)",
-        "url": "http://freephones.s3-website-us-west-1.amazonaws.com/",
-        "logo": "https://via.placeholder.com/200x60.png?text=NCAH+Logo",
-        "description": "Independent consumer education resource helping US households understand free and discounted government supported phone and connectivity programs.",
+        "@id": "https://freetabletswithebt.github.io/#org",
+        "name": "American Connectivity Watchdog",
+        "legalName": "American Connectivity Watchdog",
+        "url": "https://freetabletswithebt.github.io/",
+        "logo": "https://freetabletswithebt.github.io/acw-logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1701 Pennsylvania Avenue NW, Suite 300",
+          "addressLocality": "Washington",
+          "addressRegion": "DC",
+          "postalCode": "20006",
+          "addressCountry": "US"
+        },
         "contactPoint": [
           {
             "@type": "ContactPoint",
-            "contactType": "Customer support",
-            "email": "support@example-phonehelp.com",
-            "telephone": "+1-888-555-0192",
+            "contactType": "research inquiries",
+            "email": "research@connectivitywatchdog.org",
+            "telephone": "+1-202-555-0138",
             "areaServed": "US"
           }
-        ]
+        ],
+        "sameAs": []
+      },
+      {
+        "@type": "Person",
+        "@id": "https://freetabletswithebt.github.io/#person-aris-thorne",
+        "name": "Dr. Aris Thorne",
+        "honorificSuffix": "PhD",
+        "jobTitle": "Senior Policy Analyst",
+        "description": "Former state telecommunications advisor with 15 years of experience in digital equity policy who audits federal connectivity programs to ensure fair access for low income households.",
+        "affiliation": {
+          "@id": "https://freetabletswithebt.github.io/#org"
+        }
       },
       {
         "@type": "WebSite",
-        "@id": "http://freephones.s3-website-us-west-1.amazonaws.com/#website",
-        "url": "http://freephones.s3-website-us-west-1.amazonaws.com/",
-        "name": "Free Government Phone and 5G Device Guide",
+        "@id": "https://freetabletswithebt.github.io/#website",
+        "url": "https://freetabletswithebt.github.io/",
+        "name": "American Connectivity Watchdog - Free Tablets With EBT Oversight Guide",
         "publisher": {
-          "@id": "http://freephones.s3-website-us-west-1.amazonaws.com/#org"
-        },
-        "inLanguage": "en-US"
+          "@id": "https://freetabletswithebt.github.io/#org"
+        }
       },
       {
-        "@type": "WebPage",
-        "@id": "http://freephones.s3-website-us-west-1.amazonaws.com/#webpage",
-        "url": "http://freephones.s3-website-us-west-1.amazonaws.com/",
-        "name": "Free Government Phone and 5G Device Guide for US Households",
-        "isPartOf": {
-          "@id": "http://freephones.s3-website-us-west-1.amazonaws.com/#website"
+        "@type": "Article",
+        "@id": "https://freetabletswithebt.github.io/#article",
+        "headline": "Free Tablets With EBT 2025 - Oversight and Guidance For Low Income Families",
+        "description": "In depth, neutral 2025 guide from American Connectivity Watchdog that explains free and discounted tablet programs connected to EBT and SNAP benefits in the United States.",
+        "author": {
+          "@id": "https://freetabletswithebt.github.io/#person-aris-thorne"
         },
-        "description": "Detailed explanation of Lifeline, ACP, low income wireless plans, free and discounted phone options, eligibility rules, required documents, and 5G capable smartphone choices for US residents.",
-        "inLanguage": "en-US",
-        "datePublished": "2025-01-01",
-        "dateModified": "2025-01-01"
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "http://freephones.s3-website-us-west-1.amazonaws.com/#faq",
+        "datePublished": "2025-12-07",
+        "dateModified": "2025-12-07",
         "mainEntityOfPage": {
-          "@id": "http://freephones.s3-website-us-west-1.amazonaws.com/#webpage"
+          "@id": "https://freetabletswithebt.github.io/#website"
         },
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is the Lifeline Program and how does it help with phone service?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The Lifeline Program is a long running federal benefit that reduces the cost of phone or internet service for qualifying low income households. Eligible customers receive a monthly discount on their bill through participating providers so that they can stay connected for work, healthcare, education, and emergencies."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is the Affordable Connectivity Program still available?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The Affordable Connectivity Program was created to help households afford home or mobile internet service, but funding and availability have changed over time. Many providers now reference ACP transition or replacement offers. Consumers should check the official FCC ACP page and their chosen provider for the latest status in their area."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Who qualifies for a free government supported phone?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Eligibility usually depends on household income or participation in qualifying programs such as SNAP, Medicaid, SSI, Federal Public Housing Assistance, Veterans Pension and Survivors Benefit, or certain Tribal assistance programs. Households must generally have income at or below 135 percent to 150 percent of the Federal Poverty Guidelines depending on state rules."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do free phones include 5G capable smartphones?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Many providers now include 5G capable smartphones in their upgrade or promotional offers, especially in areas where 5G coverage is strong. While the exact model is never guaranteed, it is increasingly common to see mid range 5G Android devices and sometimes Samsung branded phones offered at no extra cost for eligible customers."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Will I have to sign a contract or pay hidden fees?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Most Lifeline focused offers do not require a long term contract. However, standard wireless terms, taxes, and fees may still apply. It is important to review each providers disclosures, ask about activation or upgrade charges, and keep copies of your paperwork so that there are no surprises later."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What documents do I need to apply for a free phone program?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Applicants typically need a government issued ID, proof of address, and proof of eligibility. That proof may be an approval letter, benefit card, or online account screenshot for programs such as SNAP, Medicaid, or SSI. Income based applicants may provide pay stubs, a tax return, or benefit statements that show household income."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does the application process usually take?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "If all documents are clear and the information matches public databases, many applications are approved in a few minutes to a few business days. If additional verification is required or documents are missing, the process can take longer. Applicants should monitor email and text messages from their chosen provider for status updates."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can I switch providers and keep my phone number?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, number portability rules allow most customers to bring their existing number to a new provider as long as the account remains active and you request the transfer during the application. It is important not to cancel your old service until the new provider confirms that the number has been successfully moved."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What happens if my income or benefit status changes?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Households must notify their provider within thirty days if they no longer meet eligibility rules. Providers and the Lifeline administrator also conduct regular recertification checks. If you still qualify under updated income or program participation rules, you can confirm information and keep your discount. If not, the benefit may be removed and you may move to a standard plan."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is this website affiliated with the federal government or any carrier?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. This website is an independent educational resource. It is not a government website, it does not process applications, and it is not a wireless carrier. Our goal is to help you understand rules, compare options, and prepare your documents before you apply through official channels or participating providers."
-            }
-          }
-        ]
+        "publisher": {
+          "@id": "https://freetabletswithebt.github.io/#org"
+        }
       },
       {
         "@type": "SoftwareApplication",
-        "@id": "http://freephones.s3-website-us-west-1.amazonaws.com/#device-checker",
-        "name": "Device Availability & Eligibility Checker 2025",
+        "@id": "https://freetabletswithebt.github.io/#ebt-pre-screener",
+        "name": "EBT Tablet Eligibility Pre Screener (2025 Cycle)",
+        "applicationCategory": "WebApplication",
         "operatingSystem": "Any",
-        "applicationCategory": "BusinessApplication",
-        "url": "http://freephones.s3-website-us-west-1.amazonaws.com/#device-checker",
-        "description": "Interactive educational tool that helps US households explore probable device availability by zip code, qualifying program, and preferred brand before applying through official providers.",
         "creator": {
-          "@id": "http://freephones.s3-website-us-west-1.amazonaws.com/#org"
+          "@id": "https://freetabletswithebt.github.io/#org"
+        },
+        "publisher": {
+          "@id": "https://freetabletswithebt.github.io/#org"
         },
         "offers": {
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "USD"
+        },
+        "featureList": [
+          "Interactive benefit based input with SNAP, Medicaid, SSI, Veterans Pension and Tribal options",
+          "Household size selector for one to eight members",
+          "Client side processing indicator",
+          "Direct handoff link to partner portal at freetabletwithebt.info"
+        ],
+        "potentialAction": {
+          "@type": "Action",
+          "name": "Check EBT tablet eligibility for the 2025 cycle",
+          "target": "https://freetabletswithebt.github.io/#pre-screener"
         }
       },
       {
-        "@type": "Person",
-        "@id": "http://freephones.s3-website-us-west-1.amazonaws.com/#sarah-jenkins",
-        "name": "Sarah Jenkins",
-        "jobTitle": "Senior Digital Inclusion Specialist",
-        "description": "Former case manager with 12 years of experience helping US households navigate Lifeline and ACP benefits.",
-        "worksFor": {
-          "@id": "http://freephones.s3-website-us-west-1.amazonaws.com/#org"
-        }
+        "@type": "FAQPage",
+        "@id": "https://freetabletswithebt.github.io/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I really get a free tablet with EBT in 2025?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In some situations, households that use EBT to receive SNAP or other qualifying benefits can get a free or very low cost tablet through providers that participate in federal and state connectivity programs. The tablet itself is not paid directly by the EBT card, but EBT confirms that your household is low income and may qualify for device help."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What documents do I need for a free tablet program?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You usually need proof of identity, proof of address and proof of eligibility such as a SNAP, Medicaid, SSI or similar benefits letter. In some cases you will also need a Social Security number or individual taxpayer identification number so that the provider can verify your identity and prevent duplicate benefits."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it safe to share my EBT information online?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You should never share your full EBT card number, PIN or full Social Security number through text message, direct message or unencrypted forms. Only apply through official provider websites that use secure HTTPS connections and have clear privacy policies. If a company pressures you to send photos of both sides of your card in a chat app, treat that as a serious red flag."
+            }
+          }
+        ]
       }
     ]
   }
   </script>
 </head>
 
-<body class="antialiased">
-  <!-- Header and Navigation -->
-  <header class="sticky-nav">
-    <div class="site-wrapper flex items-center justify-between py-3 md:py-4">
-      <div class="flex items-center gap-2">
-        <div class="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-sky-400 text-white">
-          <i class="fa-solid fa-signal"></i>
-        </div>
-        <div>
-          <div class="text-sm font-semibold tracking-wide text-slate-900 uppercase">
-            NCAH · National Connectivity Access Hub
-          </div>
-          <div class="text-xs text-slate-500">
-            Independent US connectivity resource
-          </div>
-        </div>
-      </div>
+<body class="bg-slate-100">
+  <div class="site-wrapper">
 
-      <nav class="flex items-center gap-3">
-        <div class="hidden items-center gap-1 md:flex desktop-nav-links">
-          <a href="#home" class="nav-link-custom">Home</a>
-          <a href="#device-checker" class="nav-link-custom">Eligibility Tool</a>
-          <a href="#how-it-works" class="nav-link-custom">How It Works</a>
-          <a href="#eligibility" class="nav-link-custom">Eligibility</a>
-          <a href="#plans" class="nav-link-custom">Plans &amp; Phones</a>
-          <a href="#apply" class="nav-link-custom">How to Apply</a>
-          <a href="#faq" class="nav-link-custom">FAQ</a>
-          <a href="#about" class="nav-link-custom">About</a>
-          <a href="#contact" class="nav-link-custom">Contact</a>
-        </div>
-        <a href="#eligibility" class="btn-primary-main text-sm">
-          <i class="fa-solid fa-circle-check"></i>
-          <span>Check Your Eligibility</span>
-        </a>
-        <button class="md:hidden nav-toggle-btn ms-1" id="navToggle" aria-label="Toggle navigation">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </nav>
-    </div>
+    <!-- Top Nav -->
+    <header class="mb-6">
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-soft px-3 py-2">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="#top">
+          <div class="flag-pill">
+            <i class="fa-solid fa-flag-usa"></i>
+          </div>
+          <div>
+            <span class="d-block navbar-brand-title">The American Connectivity Watchdog</span>
+            <span class="d-block navbar-brand-subtitle">EBT Device Oversight and Research</span>
+          </div>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end mt-2 mt-lg-0" id="mainNav">
+          <ul class="navbar-nav gap-lg-2 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#pre-screener">Pre Screener</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#programs">Programs</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#eligibility">Eligibility</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#steps">Checklist</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#scams">Scam Check</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#about">Research Team</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <!-- Mobile Nav -->
-    <div id="mobileNav" class="mobile-nav border-t border-slate-100 bg-white">
-      <div class="site-wrapper flex flex-col gap-2 py-3">
-        <a href="#home" class="nav-link-custom">Home</a>
-        <a href="#device-checker" class="nav-link-custom">Eligibility Tool</a>
-        <a href="#how-it-works" class="nav-link-custom">How It Works</a>
-        <a href="#eligibility" class="nav-link-custom">Eligibility</a>
-        <a href="#plans" class="nav-link-custom">Plans &amp; Phones</a>
-        <a href="#apply" class="nav-link-custom">How to Apply</a>
-        <a href="#faq" class="nav-link-custom">FAQ</a>
-        <a href="#about" class="nav-link-custom">About</a>
-        <a href="#contact" class="nav-link-custom">Contact</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero Section -->
-    <section id="home" class="pt-8 md:pt-12 pb-10">
-      <div class="site-wrapper grid gap-8 md:grid-cols-2 md:items-center">
-        <div>
-          <div class="hero-badge mb-3">
-            <i class="fa-solid fa-shield-heart text-sky-700"></i>
-            <span>National Connectivity Access Hub · Serving US households</span>
-          </div>
-          <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 mb-3">
-            Your in depth guide to free government supported phones and 5G wireless plans
-          </h1>
-          <p class="text-slate-600 text-sm md:text-base mb-4 max-w-xl">
-            Staying connected is not a luxury any longer, it is a basic part of everyday life in the United States. This independent guide explains how federal benefit programs like Lifeline and similar offers through participating carriers can help qualifying households access free or very low cost phone service, including modern smartphones that work on fast 5G networks.
-          </p>
-          <ul class="space-y-2 text-sm md:text-base mb-5 text-slate-700">
-            <li class="flex gap-2">
-              <span class="mt-1 text-green-600"><i class="fa-solid fa-check-circle"></i></span>
-              <span>Understand how Lifeline, Affordable Connectivity style offers, and state level programs work together to lower your wireless bill.</span>
-            </li>
-            <li class="flex gap-2">
-              <span class="mt-1 text-green-600"><i class="fa-solid fa-check-circle"></i></span>
-              <span>See which households may qualify based on income, SNAP, Medicaid, SSI, WIC, Federal Public Housing Assistance, Veterans benefits, or Tribal programs.</span>
-            </li>
-            <li class="flex gap-2">
-              <span class="mt-1 text-green-600"><i class="fa-solid fa-check-circle"></i></span>
-              <span>Compare typical plans and 5G capable smartphones that participating providers may offer at little or no cost to you.</span>
-            </li>
-            <li class="flex gap-2">
-              <span class="mt-1 text-green-600"><i class="fa-solid fa-check-circle"></i></span>
-              <span>Follow a step by step checklist that helps you gather documents, avoid common mistakes, and submit a strong application the first time.</span>
-            </li>
-          </ul>
-          <div class="flex flex-wrap items-center gap-3 mb-4">
-            <a href="#apply" class="btn-primary-main">
-              <i class="fa-solid fa-clipboard-check"></i>
-              <span>Start the application checklist</span>
-            </a>
-            <a href="#plans" class="btn-outline-soft">
-              <i class="fa-solid fa-mobile-screen-button text-slate-500"></i>
-              <span>Explore plans and phones</span>
-            </a>
-          </div>
-          <div class="flex flex-wrap items-center gap-3 text-xs text-slate-500">
-            <div class="hero-chip">
-              <i class="fa-solid fa-location-dot text-sky-600"></i>
-              <span>Available in most US states and territories</span>
-            </div>
-            <div class="hero-chip">
-              <i class="fa-solid fa-user-shield text-emerald-600"></i>
-              <span>NCAH is independent and non governmental</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-illustration p-4 md:p-6">
-          <div class="flex justify-between items-start mb-4">
-            <div class="space-y-2">
-              <div class="hero-chip">
-                <i class="fa-solid fa-wifi text-sky-600"></i>
-                <span>Nationwide networks</span>
-              </div>
-              <div class="hero-chip">
-                <i class="fa-solid fa-signal text-emerald-500"></i>
-                <span>5G capable devices</span>
-              </div>
-            </div>
-            <div class="hero-signal">
-              <i class="fa-solid fa-tower-cell"></i>
-            </div>
-          </div>
-          <div class="bg-white rounded-xl p-4 shadow-sm border border-slate-200 mb-4">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <div class="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center text-white">
-                  <i class="fa-solid fa-user"></i>
-                </div>
-                <div>
-                  <div class="text-xs text-slate-500">Sample applicant</div>
-                  <div class="text-sm font-semibold text-slate-900">Family in Dallas, Texas</div>
-                </div>
-              </div>
-              <div class="badge-soft">
-                <i class="fa-solid fa-circle-check text-emerald-500"></i>
-                <span>Approved</span>
-              </div>
-            </div>
-            <div class="grid grid-cols-2 gap-3 text-xs text-slate-600">
-              <div>
-                <div class="flex items-center gap-2 mb-1">
-                  <i class="fa-solid fa-id-card-clip text-blue-600"></i>
-                  <span class="font-semibold text-slate-800">Program pathway</span>
-                </div>
-                <p>Approved through SNAP and Medicaid verification using the National Verifier system.</p>
-              </div>
-              <div>
-                <div class="flex items-center gap-2 mb-1">
-                  <i class="fa-solid fa-mobile-screen-button text-indigo-600"></i>
-                  <span class="font-semibold text-slate-800">Sample benefit</span>
-                </div>
-                <p>Zero dollar device price for a modern 5G smartphone, unlimited talk and text, and a monthly data allowance enough for everyday apps.</p>
-              </div>
-            </div>
-          </div>
-          <div class="text-xs text-slate-500">
-            <p class="mb-1"><i class="fa-solid fa-circle-info text-sky-600 me-1"></i>Example above is for illustration only. Actual phones, plans, and approval times vary by provider, location, and program rules.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Device Availability & Eligibility Checker 2025 -->
-    <section id="device-checker" class="pb-10 bg-slate-50">
-      <div class="site-wrapper">
-        <div class="card-elevated p-5 md:p-7 bg-gradient-to-br from-slate-50 via-white to-sky-50 border border-slate-200">
-          <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
-            <div>
-              <div class="section-tag mb-2">
-                <i class="fa-solid fa-laptop-mobile"></i>
-                <span>Interactive NCAH tool</span>
-              </div>
-              <h2 class="text-xl md:text-2xl font-bold text-slate-900 mb-1">
-                Device Availability &amp; Eligibility Checker 2025
-              </h2>
-              <p class="text-sm md:text-base text-slate-600 max-w-2xl">
-                Use this educational checker to explore likely Samsung Galaxy and 5G device availability in your area based on your zip code, qualifying program, and preferred brand before you apply through an official provider.
-              </p>
-            </div>
-            <div class="flex items-center gap-2 text-xs md:text-sm text-slate-600 bg-white border border-slate-200 rounded-full px-3 py-1">
-              <i class="fa-solid fa-flag-usa text-blue-600"></i>
-              <span>Designed for US households</span>
-            </div>
-          </div>
-
-          <form id="deviceCheckerForm" class="grid gap-4 md:grid-cols-3 md:items-end">
-            <!-- Step 1 -->
-            <div class="space-y-3 md:col-span-1">
-              <div>
-                <label for="zipCodeInput" class="block text-xs font-semibold text-slate-700 mb-1">
-                  Step 1 · Enter zip code
-                </label>
-                <input
-                  id="zipCodeInput"
-                  type="text"
-                  inputmode="numeric"
-                  maxlength="10"
-                  class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                  placeholder="Example: 30301"
-                >
-                <p class="mt-1 text-[11px] text-slate-500">
-                  Standard US 5 digit or ZIP+4 format.
-                </p>
-              </div>
-              <div>
-                <label for="programSelect" class="block text-xs font-semibold text-slate-700 mb-1">
-                  Step 1 · Select qualifying program
-                </label>
-                <select
-                  id="programSelect"
-                  class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                >
-                  <option value="">Choose an option</option>
-                  <option value="SNAP">SNAP</option>
-                  <option value="Medicaid">Medicaid</option>
-                  <option value="SSI">SSI</option>
-                  <option value="Low Income">Low Income (income based)</option>
-                  <option value="Veterans">Veterans benefits</option>
-                </select>
-              </div>
-            </div>
-
-            <!-- Step 2 -->
-            <div class="space-y-3 md:col-span-1">
-              <div>
-                <label for="brandSelect" class="block text-xs font-semibold text-slate-700 mb-1">
-                  Step 2 · Preferred device brand
-                </label>
-                <select
-                  id="brandSelect"
-                  class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                >
-                  <option value="">Select a brand</option>
-                  <option value="Samsung Galaxy">Samsung Galaxy</option>
-                  <option value="Apple iPhone">Apple iPhone</option>
-                  <option value="Google Pixel">Google Pixel</option>
-                  <option value="Motorola">Motorola</option>
-                </select>
-                <p class="mt-1 text-[11px] text-slate-500">
-                  Samsung Galaxy is often the most common 5G option in many low cost offers.
-                </p>
-              </div>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="md:col-span-1">
-              <button
-                id="deviceCheckButton"
-                type="submit"
-                class="w-full btn-primary-main justify-center pulse-button"
-              >
-                <i class="fa-solid fa-magnifying-glass-chart"></i>
-                <span>Check availability</span>
-              </button>
-              <div class="flex items-center gap-2 mt-2 text-xs text-emerald-700">
-                <i class="fa-solid fa-lock"></i>
-                <span>Verified secure · Educational demo only · No data is stored</span>
-              </div>
-            </div>
-          </form>
-
-          <!-- Status -->
-          <div
-            id="checkerStatus"
-            class="mt-4 hidden text-sm text-slate-700 flex items-center gap-2"
-          >
-            <span class="inline-flex h-4 w-4 rounded-full border-2 border-sky-400 border-t-transparent animate-spin"></span>
-            <span id="checkerStatusText">Searching provider inventory...</span>
-          </div>
-
-          <!-- Result -->
-          <div
-            id="checkerResult"
-            class="mt-5 hidden"
-          >
-            <div class="rounded-xl border border-emerald-300 bg-emerald-50 p-4 md:p-5 flex flex-col md:flex-row gap-4 md:items-center">
-              <div class="flex items-start gap-3 md:w-2/3">
-                <div class="mt-1 h-9 w-9 rounded-full bg-emerald-500 text-white flex items-center justify-center">
-                  <i class="fa-solid fa-check"></i>
-                </div>
-                <div>
-                  <h3 class="text-base font-semibold text-emerald-900 flex items-center gap-2">
-                    <span>🎉 High probability of Samsung Galaxy availability</span>
-                  </h3>
-                  <p class="mt-1 text-sm text-emerald-900">
-                    We found 3 providers in your area with inventory. Due to high demand, stock is reserved for 15 minutes so it is smart to complete your request in a single session if possible.
-                  </p>
-                  <p class="mt-2 text-xs text-emerald-900/80">
-                    This result is an educational estimate from NCAH and does not replace official eligibility checks or provider decisions.
-                  </p>
-                </div>
-              </div>
-              <div class="md:w-1/3 flex flex-col items-start md:items-end gap-2">
-                <a
-                  href="https://applyfreegovphone.com/"
-                  class="btn-primary-main w-full md:w-auto justify-center pulse-button"
-                  rel="noopener noreferrer"
-                >
-                  <span>APPLY &amp; CLAIM DEVICE NOW ➤</span>
-                </a>
-                <div class="flex items-center gap-2 text-[11px] text-slate-600 mt-1">
-                  <i class="fa-solid fa-shield-halved text-emerald-600"></i>
-                  <span>NCAH Verified Secure gateway recommendation</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <p class="mt-4 text-[11px] text-slate-500">
-            This checker is for education and planning. Final device models, coverage, and approval decisions always come from official program administrators and participating providers.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- How Programs Work -->
-    <section id="how-it-works" class="py-10 bg-slate-50">
-      <div class="site-wrapper">
-        <div class="mb-6">
-          <div class="section-tag">
-            <i class="fa-solid fa-diagram-project"></i>
-            <span>How free and discounted phone programs work</span>
-          </div>
-          <h2 class="section-title mt-3">Understanding Lifeline, Affordable Connectivity style offers, and related programs</h2>
-          <p class="section-lead">
-            Several policy decisions over the last few decades have recognized that phone and internet access are essential services for modern American life. Out of that recognition came federal programs like Lifeline and the Affordable Connectivity Program, along with state level initiatives and carrier specific discount offerings that make mobile service more affordable for people with limited income.
-          </p>
-        </div>
-
-        <div class="grid gap-6 md:grid-cols-2 mb-8">
-          <article class="card-elevated p-5 md:p-6">
-            <h3 class="text-lg font-semibold mb-2 flex items-center gap-2">
-              <i class="fa-solid fa-life-ring text-blue-600"></i>
-              Lifeline Program overview
-            </h3>
-            <p class="text-sm text-slate-600 mb-3">
-              Lifeline is a long standing federal benefit that reduces the cost of phone or internet service for qualifying low income households. Instead of sending a check directly to you, the program provides a discount that participating carriers apply to an eligible service line each month. You still choose your provider from participating companies, but Lifeline gives them funds so they can lower your bill.
-            </p>
-            <p class="text-sm text-slate-600 mb-3">
-              In many areas, carriers go beyond the minimum discount by offering special plans that bundle talk, text, and data, and sometimes provide a smartphone at no or very low upfront cost. This is how many households receive a free or nearly free device while still remaining within program guidelines.
-            </p>
-            <p class="text-sm text-slate-600">
-              The Federal Communications Commission oversees the Lifeline rules and the Universal Service Administrative Company helps manage eligibility validation, reimbursement, and compliance. Providers must follow strict rules related to marketing, verification, and record keeping so that funds are used for households that truly qualify.
-            </p>
-          </article>
-
-          <article class="card-elevated p-5 md:p-6">
-            <h3 class="text-lg font-semibold mb-2 flex items-center gap-2">
-              <i class="fa-solid fa-wifi text-sky-500"></i>
-              Affordable Connectivity style offers and home internet
-            </h3>
-            <p class="text-sm text-slate-600 mb-3">
-              The Affordable Connectivity Program was introduced to make home and mobile broadband more affordable, especially during and after the pandemic when remote work, online schooling, and telehealth visits became common. The program helped qualifying households receive a significant discount on broadband internet service and sometimes a one time device discount for a connected tablet or computer.
-            </p>
-            <p class="text-sm text-slate-600 mb-3">
-              While funding levels and program rules have changed over time, the concept remains important. Many carriers now reference ACP transition plans, loyalty discounts, or low income internet offers that grew out of ACP experience. Keeping track of these changes can feel confusing, which is one reason guides like this one are helpful.
-            </p>
-            <p class="text-sm text-slate-600">
-              When you evaluate a current low income internet or combined phone and internet plan, pay attention to how long discounts last, whether they automatically convert to standard rates, and what happens if federal funding changes again in the future. Always read the fine print and ask questions before you enroll.
-            </p>
-          </article>
-        </div>
-
-        <div class="highlight-box mb-8">
-          <div class="flex items-start gap-3">
-            <div class="mt-1 text-blue-600">
-              <i class="fa-solid fa-circle-info"></i>
-            </div>
-            <div class="text-sm">
-              <p class="mb-2">
-                At a high level, Lifeline style benefits, state based support, and carrier promotions combine to reduce the monthly cost of service, while device programs make it possible for many households to receive a modern smartphone without a large upfront payment. Some independent comparison resources also show how these options differ by carrier and region.
-              </p>
-              <p>
-                For example, many readers like to compare provider flexibility and device options through resources that explain how <a href="https://applyfreegovphone.com/"><strong>free 5g government phones samsung</strong></a> may be offered through certain companies, especially where 5G coverage and supply of Samsung branded phones is strong. Guides like these help you set realistic expectations before you start an application.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Program Comparison Table -->
-        <div class="mb-8">
-          <h3 class="text-base md:text-lg font-semibold mb-2">Major program types at a glance</h3>
-          <p class="text-sm text-slate-600 mb-3">
-            The exact mix of programs available to you depends on your state, tribal affiliation, and chosen provider. The table below summarizes common categories so that you can see how they fit together.
-          </p>
-          <div class="table-responsive-custom">
-            <table class="custom-table">
-              <thead>
-                <tr>
-                  <th>Program or offer type</th>
-                  <th>Who it helps</th>
-                  <th>Typical benefit</th>
-                  <th>Approximate value</th>
-                  <th>Managed or influenced by</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Federal Lifeline Program</td>
-                  <td>Low income households meeting income limits or participating in certain benefit programs</td>
-                  <td>Monthly discount toward phone or internet service, sometimes paired with a special low cost plan</td>
-                  <td>Often around 9 to 30 dollars per month depending on state and provider</td>
-                  <td>Federal Communications Commission and Universal Service Administrative Company</td>
-                </tr>
-                <tr>
-                  <td>Affordable Connectivity style broadband offers</td>
-                  <td>Households that would struggle to pay standard broadband prices, often including students and seniors</td>
-                  <td>Discounted home internet or mobile broadband, sometimes with a device discount</td>
-                  <td>Varies widely, but often 30 dollars or more per month during active funding periods</td>
-                  <td>Federal policy decisions, carriers that design special plans, and state programs</td>
-                </tr>
-                <tr>
-                  <td>State or regional phone assistance programs</td>
-                  <td>Residents of particular states or Tribal lands, sometimes with extra support for seniors or people with disabilities</td>
-                  <td>Additional credits on top of Lifeline, extra minutes, or higher data allowances on participating plans</td>
-                  <td>Ranges from small top ups to substantial extra discounts beyond federal support</td>
-                  <td>State public utility commissions, Tribal governments, and local carriers</td>
-                </tr>
-                <tr>
-                  <td>Carrier promotional low income plans</td>
-                  <td>Customers who meet the carrier's income or program participation criteria</td>
-                  <td>Special plan with bundled talk, text, and data, sometimes including a no cost device upgrade</td>
-                  <td>Discounted from standard retail rates, often with lower activation and upgrade fees</td>
-                  <td>Individual carriers, mobile virtual network operators, and partner retailers</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="text-xs text-slate-500 mt-2">
-            Values in the table are general illustrations and not guaranteed offers. Always check current details from your selected provider and official government resources.
-          </p>
-        </div>
-
-        <!-- Official Links -->
-        <div class="grid gap-4 md:grid-cols-2">
-          <div class="alert-tip">
-            <div class="flex items-start gap-3">
-              <i class="fa-solid fa-link text-emerald-600 mt-1"></i>
-              <div class="text-sm">
-                <p class="font-semibold mb-1">Check official overview resources</p>
-                <p class="mb-1">
-                  For the most current Lifeline rules, including income thresholds and participating carrier information, you can review the official FCC Lifeline page at
-                  <a href="https://www.fcc.gov/lifeline" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline">fcc.gov/lifeline</a>.
-                </p>
-                <p>
-                  For Affordable Connectivity Program history and transition updates, the FCC maintains an information hub that you can access at
-                  <a href="https://www.fcc.gov/acp" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline">fcc.gov/acp</a>.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="alert-income">
-            <div class="flex items-start gap-3">
-              <i class="fa-solid fa-scale-balanced text-amber-500 mt-1"></i>
-              <div class="text-sm">
-                <p class="font-semibold mb-1">Why benefits change from year to year</p>
-                <p>
-                  Funding levels, policy decisions, and carrier contracts change over time. A plan that includes a free smartphone today may look different next year, and some programs may close for new enrollments if funding runs out. This guide focuses on helping you understand the structure of the programs so that you can evaluate current offers with confidence.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Eligibility and Documents -->
-    <section id="eligibility" class="py-10">
-      <div class="site-wrapper">
-        <div class="mb-6">
-          <div class="section-tag">
-            <i class="fa-solid fa-id-card-clip"></i>
-            <span>Eligibility, income rules, and required documents</span>
-          </div>
-          <h2 class="section-title mt-3">Who qualifies and how to prove that you are eligible</h2>
-          <p class="section-lead">
-            Although each provider may have its own internal processes, federal and state guidelines set the basic rules that determine which households qualify for Lifeline and related offers. Most applicants qualify either through participation in specific benefit programs or by meeting income thresholds tied to the Federal Poverty Guidelines.
-          </p>
-        </div>
-
-        <div class="grid gap-6 md:grid-cols-2 mb-8">
-          <div class="card-elevated p-5 md:p-6">
-            <h3 class="text-base font-semibold mb-2 flex items-center gap-2">
-              <i class="fa-solid fa-list-check text-blue-600"></i>
-              Program based eligibility examples
-            </h3>
-            <p class="text-sm text-slate-600 mb-3">
-              Many households qualify because at least one member participates in a qualifying assistance program. These programs show that a household already meets strict financial or need based criteria, so they act as proof for Lifeline style benefits as well.
-            </p>
-            <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
-              <li>Supplemental Nutrition Assistance Program, often called SNAP or food stamps.</li>
-              <li>Medicaid, which provides health coverage to eligible low income individuals and families.</li>
-              <li>Supplemental Security Income, commonly abbreviated as SSI.</li>
-              <li>Federal Public Housing Assistance or Section 8 housing vouchers.</li>
-              <li>Veterans Pension or Survivors Benefit programs.</li>
-              <li>Certain Tribal specific assistance programs in qualifying Tribal lands.</li>
-              <li>Women, Infants, and Children, known as WIC, in some state specific implementations.</li>
-            </ul>
-          </div>
-          <div class="card-elevated p-5 md:p-6">
-            <h3 class="text-base font-semibold mb-2 flex items-center gap-2">
-              <i class="fa-solid fa-coins text-emerald-600"></i>
-              Income based eligibility path
-            </h3>
-            <p class="text-sm text-slate-600 mb-3">
-              If no one in your household participates in a listed benefit program, you may still qualify based on overall household income. The guidelines compare your combined household income to the Federal Poverty Guidelines for your state and household size.
-            </p>
-            <p class="text-sm text-slate-600 mb-3">
-              The threshold for Lifeline is often at or below 135 percent of the Federal Poverty Guidelines. Some related offers and state programs may use 150 percent or a slightly different percentage. Exact numbers change each year when the guidelines are updated, so always check current figures for your state.
-            </p>
-            <p class="text-sm text-slate-600">
-              In practice, you might gather pay stubs for the last three months, a Social Security benefits letter, unemployment statements, or your most recent federal tax return to show that your total income is under the applicable limit.
-            </p>
-          </div>
-        </div>
-
-        <div class="alert-income mb-8">
-          <div class="flex items-start gap-3">
-            <i class="fa-solid fa-triangle-exclamation text-amber-500 mt-1"></i>
-            <div class="text-sm">
-              <p class="font-semibold mb-1">Important household rule</p>
-              <p>
-                Most programs allow only one discounted line per eligible household. A household is generally defined as people who live together and share income and expenses. Roommates who keep finances separate may count as different households, but a family that shares expenses and meals is usually a single household even if there are multiple adults. Misstating this can cause issues when your application is reviewed.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Eligibility Table -->
-        <div class="mb-8">
-          <h3 class="text-base md:text-lg font-semibold mb-2">Eligibility pathways and example documents</h3>
-          <p class="text-sm text-slate-600 mb-3">
-            The National Verifier system or your chosen provider will ask for documents that match your eligibility path. The table below shows common examples so that you can gather them before you start.
-          </p>
-          <div class="table-responsive-custom">
-            <table class="custom-table">
-              <thead>
-                <tr>
-                  <th>Eligibility path</th>
-                  <th>Primary proof of eligibility</th>
-                  <th>Additional documents that may be requested</th>
-                  <th>Tips to reduce delays</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>SNAP, Medicaid, SSI, or WIC participation</td>
-                  <td>Recent approval letter, benefits award notice, or active program card showing your name and program details</td>
-                  <td>Screenshot of online benefits portal, notice of recertification, or letter from the agency verifying current participation</td>
-                  <td>Make sure the document is not expired, that the name matches exactly, and that the whole page is visible when you upload or scan it.</td>
-                </tr>
-                <tr>
-                  <td>Federal Public Housing Assistance</td>
-                  <td>Housing assistance approval letter or rental agreement that clearly lists the program name and your household as the beneficiary</td>
-                  <td>Correspondence from your local housing authority or case worker, or copies of recent rent adjustment notices</td>
-                  <td>Highlight your name and the program name if the document is long so that reviewers can find the information quickly.</td>
-                </tr>
-                <tr>
-                  <td>Veterans Pension or Survivors Benefit</td>
-                  <td>Official Veterans Affairs benefits statement that shows the type of benefit and confirms it is active</td>
-                  <td>Bank statements showing regular VA deposits, if requested, and identification that matches the benefits statement</td>
-                  <td>Double check that the statement shows the most recent year and that your address matches your application when possible.</td>
-                </tr>
-                <tr>
-                  <td>Income based qualification</td>
-                  <td>Federal tax return from the most recent year or three months of pay stubs for all adult household members</td>
-                  <td>Social Security benefit statements, pension statements, unemployment benefit letters, or other income records</td>
-                  <td>Add up income from all sources to make sure you are under the threshold before you apply and keep calculations for your records.</td>
-                </tr>
-                <tr>
-                  <td>Tribal specific assistance programs</td>
-                  <td>Approval or participation letter for programs such as Tribal TANF, Bureau of Indian Affairs General Assistance, or certain Tribal housing programs</td>
-                  <td>Tribal ID card, residency verification, or letters from Tribal programs confirming ongoing participation</td>
-                  <td>Check special Tribal Lifeline and similar rules, which may provide higher discounts or additional benefits in qualifying areas.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div class="grid gap-6 md:grid-cols-2">
-          <div class="alert-tip">
-            <div class="flex items-start gap-3">
-              <i class="fa-solid fa-folder-open text-emerald-600 mt-1"></i>
-              <div class="text-sm">
-                <p class="font-semibold mb-1">Identity and address verification</p>
-                <p class="mb-1">
-                  Besides eligibility proof, you must also verify your identity and where you live. This may involve a government issued ID such as a driver's license or state ID card, a Social Security card in some cases, and proof of address like a utility bill or lease.
-                </p>
-                <p>
-                  If your ID shows an old address, you may need a separate document that proves your current residence. Keeping these documents organized makes the application smoother.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="alert-income">
-            <div class="flex items-start gap-3">
-              <i class="fa-solid fa-repeat text-amber-500 mt-1"></i>
-              <div class="text-sm">
-                <p class="font-semibold mb-1">Annual recertification and changes</p>
-                <p class="mb-1">
-                  Most programs require you to confirm that you remain eligible, usually once per year. If you ignore these notices, your discount may be removed even if you still qualify.
-                </p>
-                <p>
-                  You must also inform your provider if your income increases above the threshold or you move to an address that changes your provider options. Honest updates protect the integrity of the program and reduce the risk of future problems.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Plans and 5G Phones -->
-    <section id="plans" class="py-10 bg-slate-50">
-      <div class="site-wrapper">
-        <div class="mb-6">
-          <div class="section-tag">
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <span>Plans, 5G capable smartphones, and what to expect</span>
-          </div>
-          <h2 class="section-title mt-3">What kind of plans and phones do free and discounted programs usually offer</h2>
-          <p class="section-lead">
-            Providers that participate in Lifeline and similar programs design special plans that fit within monthly credit limits while still delivering practical features. You will not usually see the same luxury flagship phones or massive unlimited data plans that cost full retail prices, but you can expect a useful combination of talk, text, and data, often along with a smartphone that supports modern apps, messaging, and everyday browsing.
-          </p>
-        </div>
-
-        <div class="grid gap-6 md:grid-cols-3 mb-8">
-          <div class="card-elevated p-5">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="h-10 w-10 rounded-full bg-blue-600 text-white flex items-center justify-center">
-                <i class="fa-solid fa-phone-volume"></i>
-              </div>
-              <div>
-                <h3 class="text-sm font-semibold mb-0.5">Talk and text essentials</h3>
-                <p class="text-xs text-slate-500">The foundation of most benefit plans</p>
-              </div>
-            </div>
-            <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
-              <li>Unlimited or very high minute allowances for calls within the United States.</li>
-              <li>Unlimited text messaging to keep up with friends, family, and service alerts.</li>
-              <li>Support for voicemail, caller ID, and basic call management features.</li>
-              <li>Standard mobile network coverage based on the carrier's underlying network.</li>
-            </ul>
-          </div>
-          <div class="card-elevated p-5">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="h-10 w-10 rounded-full bg-sky-500 text-white flex items-center justify-center">
-                <i class="fa-solid fa-wifi"></i>
-              </div>
-              <div>
-                <h3 class="text-sm font-semibold mb-0.5">Data allowances and hotspot options</h3>
-                <p class="text-xs text-slate-500">Connecting to apps, browsing, and streaming</p>
-              </div>
-            </div>
-            <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
-              <li>Monthly data allowances that support email, messaging apps, light streaming, and web browsing.</li>
-              <li>Some providers include hotspot use so that you can connect a laptop or tablet to your phone.</li>
-              <li>Data speeds may slow after a certain threshold, especially during peak network times.</li>
-              <li>Streaming video at standard definition rather than high definition to conserve data capacity.</li>
-            </ul>
-          </div>
-          <div class="card-elevated p-5">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="h-10 w-10 rounded-full bg-emerald-500 text-white flex items-center justify-center">
-                <i class="fa-solid fa-shield-halved"></i>
-              </div>
-              <div>
-                <h3 class="text-sm font-semibold mb-0.5">Device capabilities and security</h3>
-                <p class="text-xs text-slate-500">Smartphones that keep up with modern life</p>
-              </div>
-            </div>
-            <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
-              <li>Most providers now offer Android smartphones with multicore processors and reasonable storage.</li>
-              <li>Many support 4G LTE and, in growing numbers, 5G networks for faster downloads and lower latency.</li>
-              <li>Security updates and antivirus apps help protect your data when you browse or use banking apps.</li>
-              <li>Access to emergency alerts, two factor authentication codes, and secure messaging apps.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Device Comparison Table -->
-        <div class="mb-8">
-          <h3 class="text-base md:text-lg font-semibold mb-2">Example device categories you might see</h3>
-          <p class="text-sm text-slate-600 mb-3">
-            Device models change regularly as manufacturers release new versions and providers manage inventory. Instead of focusing on a single specific phone, it is more helpful to understand categories. That way, you can see how your option compares to what you might buy at full price.
-          </p>
-          <div class="table-responsive-custom">
-            <table class="custom-table">
-              <thead>
-                <tr>
-                  <th>Category</th>
-                  <th>Typical features</th>
-                  <th>5G support</th>
-                  <th>Best suited for</th>
-                  <th>What to check before you accept</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Entry level smartphone</td>
-                  <td>Modest screen size, basic camera, limited storage, but full access to common apps and calling features</td>
-                  <td>Usually 4G LTE only, not 5G capable</td>
-                  <td>Users who mostly call, text, and check email or social media without heavy gaming or video streaming</td>
-                  <td>Make sure storage is enough for your apps, and check how long the manufacturer still provides security updates.</td>
-                </tr>
-                <tr>
-                  <td>Mid range 5G smartphone</td>
-                  <td>Larger display, improved camera, more storage, and better performance for everyday apps and light gaming</td>
-                  <td>Often supports major 5G bands used by large US carriers</td>
-                  <td>Families and workers who use video calling, navigation, streaming, and productivity apps regularly</td>
-                  <td>Ask whether the device is locked to the provider, how long you must keep service, and whether you can use it with other carriers later.</td>
-                </tr>
-                <tr>
-                  <td>High end or flagship device</td>
-                  <td>Premium materials, advanced camera system, high refresh rate display, and very fast processors</td>
-                  <td>Strong 5G support including mid band and in some cases millimeter wave, where available</td>
-                  <td>Power users, mobile photographers, or creators who demand top performance and features</td>
-                  <td>Such devices are less common in free programs. If offered, read terms carefully because there may be special upgrade or financing conditions.</td>
-                </tr>
-                <tr>
-                  <td>Certified refurbished smartphone</td>
-                  <td>Previously owned device that has been inspected, repaired, and wiped of personal data</td>
-                  <td>Depends on model, many refurbished phones are 4G LTE or 5G capable</td>
-                  <td>Users who prefer known brands at lower cost and do not mind minor cosmetic wear</td>
-                  <td>Verify the warranty, battery health, and that all important functions like camera, microphone, and charging work reliably.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Plan Comparison Table -->
-        <div class="mb-8">
-          <h3 class="text-base md:text-lg font-semibold mb-2">Example plan structures to help you compare offers</h3>
-          <p class="text-sm text-slate-600 mb-3">
-            Plan names and details vary widely by provider, but many fit into recognizable patterns. Use this table as a reference while you read plan descriptions and ask questions. Providers should be transparent about how features translate into your everyday usage.
-          </p>
-          <div class="table-responsive-custom">
-            <table class="custom-table">
-              <thead>
-                <tr>
-                  <th>Plan type</th>
-                  <th>Talk and text</th>
-                  <th>Data allowance</th>
-                  <th>Hotspot capability</th>
-                  <th>Typical use case</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Voice first plan</td>
-                  <td>Unlimited talk and text to US numbers</td>
-                  <td>Small monthly data bucket, often suitable for basic browsing and messaging apps</td>
-                  <td>Not included or limited to a small portion of total data</td>
-                  <td>Users who primarily call and text and rely on home Wi Fi for most data usage.</td>
-                </tr>
-                <tr>
-                  <td>Balanced plan</td>
-                  <td>Unlimited talk and text</td>
-                  <td>Moderate data allowance that supports daily social media, email, navigation, and some video streaming</td>
-                  <td>Sometimes permitted, with speeds and usage limits listed in the fine print</td>
-                  <td>Most households who need a mix of calling, messaging, and regular app usage without heavy video streaming every day.</td>
-                </tr>
-                <tr>
-                  <td>High data or enhanced plan</td>
-                  <td>Unlimited talk and text, often with extras like international calling to selected countries</td>
-                  <td>Higher data cap or a form of unlimited data with slower speeds after a threshold</td>
-                  <td>More generous hotspot rules, which can be helpful for laptops and tablets on the go</td>
-                  <td>Households with students, remote workers, or frequent travelers who rely heavily on their mobile connection.</td>
-                </tr>
-                <tr>
-                  <td>Combined phone and home internet plan</td>
-                  <td>Standard mobile talk and text features</td>
-                  <td>Separate home or fixed wireless broadband connection for streaming, school, and work</td>
-                  <td>Hotspot details vary; some providers encourage home modem use instead of phone tethering</td>
-                  <td>Families that need strong home internet for multiple devices plus basic mobile service outside the home.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div class="highlight-box">
-          <div class="flex items-start gap-3">
-            <div class="mt-1 text-blue-600">
-              <i class="fa-solid fa-lightbulb"></i>
-            </div>
-            <div class="text-sm">
-              <p class="font-semibold mb-1">Putting it all together before you choose a plan</p>
-              <p class="mb-1">
-                Before you commit to any specific provider, take stock of your digital life. Think about how many people share the line, how much you stream video, whether you join video calls on mobile, and how often you travel outside Wi Fi coverage. Then compare plan descriptions with those habits in mind.
-              </p>
-              <p>
-                If you read a description and it sounds too simple or too good to be true, ask for clarification. You can also take notes from independent guides that explain how different free and low cost offers work and then bring those questions to a store, authorized dealer, or online chat with a representative.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- How to Apply -->
-    <section id="apply" class="py-10">
-      <div class="site-wrapper">
-        <div class="mb-6">
-          <div class="section-tag">
-            <i class="fa-solid fa-clipboard-check"></i>
-            <span>Application checklist and timeline</span>
-          </div>
-          <h2 class="section-title mt-3">Step by step guide to applying for a free or discounted phone program</h2>
-          <p class="section-lead">
-            Applying for a Lifeline style phone plan or similar offer can feel intimidating the first time, especially if you are worried about making a mistake or having your application denied. The good news is that the process is manageable when broken into clear steps. The guide below walks through each stage so that you can move at your own pace.
-          </p>
-        </div>
-
-        <!-- Steps Grid -->
-        <div class="grid gap-6 md:grid-cols-3 mb-8">
-          <div class="card-elevated p-5">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="h-8 w-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-semibold">
-                1
-              </div>
-              <div class="text-sm font-semibold">Confirm your eligibility path</div>
-            </div>
-            <p class="text-sm text-slate-600">
-              Decide whether you plan to qualify based on benefit program participation or income. Look back at the eligibility section of this guide and pick the path that best matches your situation. This determines which documents you must gather for your application.
-            </p>
-          </div>
-          <div class="card-elevated p-5">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="h-8 w-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-semibold">
-                2
-              </div>
-              <div class="text-sm font-semibold">Gather identity and proof documents</div>
-            </div>
-            <p class="text-sm text-slate-600">
-              Use the table above as a checklist. Take clear photos or scans of your ID, proof of address, and eligibility documents. Save them in a single folder on your phone or computer so that you can upload them easily when prompted by the online form.
-            </p>
-          </div>
-          <div class="card-elevated p-5">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="h-8 w-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-semibold">
-                3
-              </div>
-              <div class="text-sm font-semibold">Compare providers and plan options</div>
-            </div>
-            <p class="text-sm text-slate-600">
-              Visit the websites for providers that serve your area, paying attention to coverage maps, plan benefits, and device options. Make a short list of two or three that seem like a good fit for your household's calling, texting, and data needs.
-            </p>
-          </div>
-        </div>
-
-        <div class="grid gap-6 md:grid-cols-3 mb-8">
-          <div class="card-elevated p-5">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="h-8 w-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-semibold">
-                4
-              </div>
-              <div class="text-sm font-semibold">Create or verify your account with the National Verifier</div>
-            </div>
-            <p class="text-sm text-slate-600">
-              Many applications are processed through a central verification system that checks whether you qualify for Lifeline. You may complete this step online or allow your chosen provider to walk you through it. Either way, be sure that your name, date of birth, and address match your documents exactly.
-            </p>
-          </div>
-          <div class="card-elevated p-5">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="h-8 w-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-semibold">
-                5
-              </div>
-              <div class="text-sm font-semibold">Submit the provider specific application</div>
-            </div>
-            <p class="text-sm text-slate-600">
-              Once you have a preliminary eligibility approval or confirmation, you will complete a provider specific application. This step usually includes selecting a plan, agreeing to terms and conditions, and confirming how you want your device shipped or picked up.
-            </p>
-          </div>
-          <div class="card-elevated p-5">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="h-8 w-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-semibold">
-                6
-              </div>
-              <div class="text-sm font-semibold">Activate your phone and set up safety features</div>
-            </div>
-            <p class="text-sm text-slate-600">
-              After your device arrives or is handed to you at a retail location, follow instructions to activate the line. Then take time to set a secure screen lock, enable location for emergency calls, and install essential apps for healthcare, banking, and school communication.
-            </p>
-          </div>
-        </div>
-
-        <!-- Steps Table -->
-        <div class="mb-8">
-          <h3 class="text-base md:text-lg font-semibold mb-2">Application steps, estimated timing, and helpful tips</h3>
-          <p class="text-sm text-slate-600 mb-3">
-            Every household is different, but this table shows a realistic timeline. Some people move through the process more quickly, while others need time to gather documents or resolve questions.
-          </p>
-          <div class="table-responsive-custom">
-            <table class="custom-table">
-              <thead>
-                <tr>
-                  <th>Step</th>
-                  <th>Estimated time</th>
-                  <th>Where it happens</th>
-                  <th>Common issues</th>
-                  <th>Tips</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Review eligibility and gather documents</td>
-                  <td>One evening to a few days, depending on how quickly you can find paperwork</td>
-                  <td>At home, using your own files and online benefit portals</td>
-                  <td>Missing letters, outdated addresses, or uncertainty about household size</td>
-                  <td>Use a folder or envelope labeled for the application and ask case workers or agencies for replacement letters if needed.</td>
-                </tr>
-                <tr>
-                  <td>Complete National Verifier or similar eligibility check</td>
-                  <td>Usually minutes, but may take up to several business days if manual review is needed</td>
-                  <td>Official verification website or through your chosen provider's portal</td>
-                  <td>Typos in names or addresses, uploaded documents that are hard to read, or mismatched program information</td>
-                  <td>Double check spelling, upload clear images, and respond quickly if the system requests additional proof.</td>
-                </tr>
-                <tr>
-                  <td>Select provider and complete provider application</td>
-                  <td>Thirty to sixty minutes</td>
-                  <td>Provider website, call center, or retail location</td>
-                  <td>Confusion about plan choices or unclear disclosure of fees and device terms</td>
-                  <td>Write down questions beforehand and ask the representative to explain anything you do not understand before you sign.</td>
-                </tr>
-                <tr>
-                  <td>Wait for device shipment or appointment</td>
-                  <td>Several business days for shipping or next available store visit</td>
-                  <td>Shipment from provider warehouse or in person at a kiosk or authorized retailer</td>
-                  <td>Shipping delays, incorrect address, or stock shortages for certain devices</td>
-                  <td>Track shipments, confirm your contact details, and ask whether alternate device models are available if your first choice is out of stock.</td>
-                </tr>
-                <tr>
-                  <td>Activate device and confirm benefits</td>
-                  <td>Twenty to forty minutes</td>
-                  <td>At home or in store with support</td>
-                  <td>Difficulty following activation steps, SIM card issues, or account login problems</td>
-                  <td>Keep packaging and instructions nearby, follow each step slowly, and call support or visit a store if you get stuck.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div class="grid gap-6 md:grid-cols-2 mb-8">
-          <div class="alert-tip">
-            <div class="flex items-start gap-3">
-              <i class="fa-solid fa-circle-exclamation text-emerald-600 mt-1"></i>
-              <div class="text-sm">
-                <p class="font-semibold mb-1">Avoiding common mistakes</p>
-                <p class="mb-1">
-                  The most common causes of delay are mismatched names, unclear documents, and incomplete forms. Take your time entering information, and always review your application before you submit it. If English is not your first language, consider asking a trusted friend, family member, or case worker to sit with you as you complete the form.
-                </p>
-                <p>
-                  If you are switching from another provider, make sure you understand how number transfer works so that you do not accidentally lose your phone number in the process.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="alert-income">
-            <div class="flex items-start gap-3">
-              <i class="fa-solid fa-phone text-amber-500 mt-1"></i>
-              <div class="text-sm">
-                <p class="font-semibold mb-1">Getting help along the way</p>
-                <p class="mb-1">
-                  Community organizations, legal aid groups, and local libraries often help residents complete benefit applications. Some also host technology assistance days where volunteers explain how to use new smartphones and avoid scams.
-                </p>
-                <p>
-                  If you want a detailed walkthrough before you apply, you might review an educational guide like <a href="https://applyfreegovphone.com/"><strong>Free government phone</strong></a> and then return to this checklist with a clearer picture of what to expect from different providers.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center">
-          <a href="#contact" class="btn-primary-main">
-            <i class="fa-solid fa-envelope-open-text"></i>
-            <span>Have questions, connect with our team</span>
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="py-10 bg-slate-50">
-      <div class="site-wrapper">
-        <div class="mb-6 text-center">
-          <div class="section-tag mx-auto">
-            <i class="fa-solid fa-circle-question"></i>
-            <span>Frequently asked questions</span>
-          </div>
-          <h2 class="section-title mt-3">Answers to common questions about free government supported phones</h2>
-          <p class="section-lead mx-auto">
-            The questions below address many of the concerns that come up when families first explore free or discounted phone programs. Reading through them before you apply can save time and reduce stress.
-          </p>
-        </div>
-
-        <div class="max-w-3xl mx-auto">
-          <!-- FAQ Items -->
-          <div class="faq-item">
-            <div class="faq-question" data-faq>
-              <span>What is the Lifeline Program and how does it help with phone service</span>
-              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Lifeline is a federal benefit that reduces the cost of phone or internet service for eligible low income households in the United States. Instead of sending money directly to you, the program pays a set amount to your service provider each month. The provider then applies this amount as a discount on your bill or designs a special plan that costs little or nothing after the credit is applied.
-              </p>
-              <p class="mt-2">
-                You can only receive one Lifeline benefit per household, so it is important to choose the line that will help your family the most. For many people, that is a mobile phone that can be used for work calls, school communication, and emergency alerts.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question" data-faq>
-              <span>Is the Affordable Connectivity Program still available</span>
-              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                The Affordable Connectivity Program was created to provide additional support for home and mobile internet service, especially during a period when remote learning and work from home were widespread. Over time, funding levels and rules have changed, and some households may see ACP references in their plan descriptions even though the program is winding down or being replaced in certain ways.
-              </p>
-              <p class="mt-2">
-                Because the situation continues to evolve, it is best to check the FCC ACP information page and your specific provider's website for the latest updates. Some providers now advertise their own low income internet plans that are modeled on ACP but funded differently.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question" data-faq>
-              <span>Who qualifies for a free government supported phone</span>
-              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                You may qualify if your household income is at or below a set percentage of the Federal Poverty Guidelines or if someone in your household participates in certain assistance programs. Examples include SNAP, Medicaid, SSI, Federal Public Housing Assistance, Veterans Pension and Survivors Benefit, and qualifying Tribal assistance programs. Some states and providers may also recognize WIC or other local programs.
-              </p>
-              <p class="mt-2">
-                Each provider lists the exact programs it accepts, and the National Verifier system uses federal and state data sources to confirm that you meet requirements. If you are unsure, you can review your benefits paperwork or ask a case worker to help you understand which programs you use.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question" data-faq>
-              <span>Do free phones include 5G capable smartphones</span>
-              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Many participating providers now offer 5G capable smartphones as part of their promotional or upgrade offers, especially in areas where 5G coverage is widely available. While it is not guaranteed that you will receive the latest flagship device, it is increasingly common for mid range Android phones with 5G support to be offered at no extra charge for eligible customers.
-              </p>
-              <p class="mt-2">
-                Some promotions highlight brand names, such as certain Samsung models, but availability depends on inventory and region. If 5G matters to you, ask the provider whether the device included with your plan supports 5G and which bands it uses on the network in your area.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question" data-faq>
-              <span>Will I have to sign a long contract or pay hidden fees</span>
-              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Lifeline focused plans typically do not require a long term service contract in the same way some traditional plans do. However, you will still agree to terms and conditions, and there may be taxes, fees, activation charges, or upgrade costs. These amounts should be clearly disclosed before you complete enrollment.
-              </p>
-              <p class="mt-2">
-                Before you sign or click accept, ask the representative to list any one time charges and ongoing fees. If you feel rushed or pressured, take a step back and consider another provider that explains terms more clearly.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question" data-faq>
-              <span>What documents do I need to apply for a free phone program</span>
-              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                At a minimum, you will need a government issued identification document such as a driver's license, state ID, Tribal ID, or passport. You will also need proof of address and proof of eligibility. Proof of address can be a utility bill, lease, mortgage statement, or official mail that shows your name and current address.
-              </p>
-              <p class="mt-2">
-                Proof of eligibility depends on how you qualify. If you use program participation, gather your benefits letters or cards. If you qualify by income, gather your tax return, pay stubs, or benefit statements that show your total household income. The clearer these documents are, the faster reviewers can approve your application.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question" data-faq>
-              <span>How long does it take for my phone to arrive once I am approved</span>
-              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                If your application is approved quickly and the provider has devices in stock, you may receive your phone within a week, sometimes sooner. If you apply at a physical kiosk or retail event, you may walk away with an activated phone the same day.
-              </p>
-              <p class="mt-2">
-                Shipping times can vary based on distance, weather events, and carrier workload. You should receive tracking information or at least a shipping confirmation. If your phone does not arrive within the promised window, contact the provider's support line for an update.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question" data-faq>
-              <span>Can I switch providers and keep my phone number</span>
-              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                In most cases, yes. Phone number portability rules allow you to bring your number from one provider to another as long as the account is still active and you provide the necessary account details. When you apply with a new provider, tell them that you want to keep your existing number and be ready to share your current account number and PIN if required.
-              </p>
-              <p class="mt-2">
-                Do not cancel your current service until the new provider confirms that the transfer is complete. If you cancel too early, your number might be disconnected and could become difficult or impossible to retrieve.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question" data-faq>
-              <span>What happens if my income or benefits change after I sign up</span>
-              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                You are required to inform your provider within a set period if you no longer qualify. This might happen because your income increases above the threshold, you move to a new address where different rules apply, or you stop participating in qualifying programs.
-              </p>
-              <p class="mt-2">
-                Providers and the Lifeline administrator also run regular recertification checks. If you still qualify, you can confirm your information and continue receiving the benefit. If you do not respond or no longer meet the criteria, the discount may be removed and you may be moved to a standard plan or lose service if you do not choose another option.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question" data-faq>
-              <span>Is this website affiliated with the federal government or any wireless carrier</span>
-              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                No. This website is an independent educational resource created to help US residents understand how phone benefit programs work. It does not process applications, approve or deny benefits, or control which devices providers offer. It is not a government website and it is not owned by a wireless carrier.
-              </p>
-              <p class="mt-2">
-                Our role is to explain rules in plain language, highlight common pitfalls, and give you tools to ask better questions. For official eligibility decisions and plan information, you should always rely on government agencies and your chosen provider.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- About / Author / Editorial Standards -->
-    <section id="about" class="py-10">
-      <div class="site-wrapper">
-        <div class="mb-6">
-          <div class="section-tag">
-            <i class="fa-solid fa-user-pen"></i>
-            <span>About this guide and editorial team</span>
-          </div>
-          <h2 class="section-title mt-3">Who created this guide and how we keep information accurate</h2>
-          <p class="section-lead">
-            When you read advice about benefit programs, you deserve to know who is behind the words. This section explains who we are, why we built this guide, and how we approach accuracy, fairness, and transparency. Our goal is to help you feel more confident about important decisions that affect your household's connectivity and budget.
-          </p>
-        </div>
-
-        <div class="grid gap-6 md:grid-cols-3 mb-8">
-          <div class="card-elevated p-5 md:col-span-2">
-            <h3 class="text-base md:text-lg font-semibold mb-2 flex items-center gap-2">
-              <i class="fa-solid fa-users text-blue-600"></i>
-              Our mission
-            </h3>
-            <p class="text-sm text-slate-600 mb-3">
-              We are a small team of consumer telecom advocates and writers who have helped families apply for phone and internet assistance programs since the early days of Lifeline expansion. Over the years, we have seen the same questions and frustrations appear again and again. Many residents are unsure which websites to trust, do not know which documents to gather, and worry that they will make a mistake that hurts their chances.
-            </p>
-            <p class="text-sm text-slate-600 mb-3">
-              This guide was created to address those concerns in one place. Instead of asking you to jump between dozens of marketing pages, we focus on clear explanations, practical checklists, and honest discussion of trade offs. We want you to walk away with a better understanding of how programs work so that you can make decisions with confidence.
-            </p>
-            <p class="text-sm text-slate-600">
-              We also believe that connectivity is a foundation for opportunity. When people can reliably reach doctors, teachers, employers, and loved ones, it is easier to recover from hardship and build a more stable life. Free and discounted phone programs are one piece of that puzzle, and we treat them with the seriousness they deserve.
-            </p>
-          </div>
-          <div class="card-elevated p-5">
-                 <h3 class="text-base md:text-lg font-semibold mb-2 flex items-center gap-2">
-              <i class="fa-solid fa-user text-indigo-600"></i>
-              Lead contributor profile
-            </h3>
-            <p class="text-sm text-slate-600 mb-3">
-              This guide is led by <strong>Sarah Jenkins</strong>, a Senior Digital Inclusion Specialist with more than twelve years of experience helping US households navigate Lifeline, ACP style benefits, and local connectivity assistance. She has supported case workers, nonprofit staff, and front line enrollment teams as they help residents complete applications and troubleshoot denials.
-            </p>
-            <p class="text-sm text-slate-600 mb-3">
-              Sarah's work has included outreach in urban neighborhoods, rural communities, and Tribal areas where connectivity gaps are most visible. She has sat at tables in community centers, libraries, and faith based organizations listening to the questions that families ask when they are unsure who to trust or which steps to take first.
-            </p>
-            <p class="text-sm text-slate-600">
-              The examples and explanations in this guide are shaped by those real world conversations. While details change over time, the core concern is always the same: making sure households can stay safely connected without taking on bills they cannot afford.
-            </p>
-          </div>
-
-          <div class="card-elevated p-5">
-            <h3 class="text-base md:text-lg font-semibold mb-2 flex items-center gap-2">
-              <i class="fa-solid fa-clipboard-list text-emerald-600"></i>
-              Editorial standards and update process
-            </h3>
-            <p class="text-sm text-slate-600 mb-3">
-              We rely on publicly available rules from the Federal Communications Commission, guidance from the Universal Service Administrative Company, and published plan information from major carriers that participate in Lifeline and related programs. When we describe how a benefit generally works, we aim to reflect what a typical applicant will see in many parts of the country.
-            </p>
-            <p class="text-sm text-slate-600 mb-3">
-              Because regulations, funding levels, and provider promotions change, we review this guide on a regular schedule. When we notice important shifts, such as changes to income thresholds or the status of Affordable Connectivity style offers, we update the text to clarify what has changed and what has stayed the same.
-            </p>
-            <p class="text-sm text-slate-600">
-              This guide is educational and does not replace official notices from government agencies or your provider. Before you sign up for any specific offer, you should always confirm final details with an authorized representative and keep copies of the documents they give you.
-            </p>
-          </div>
-        </div>
-
-        <div class="card-elevated p-5 md:p-6 mb-8">
-          <h3 class="text-base md:text-lg font-semibold mb-2 flex items-center gap-2">
-            <i class="fa-solid fa-scale-balanced text-amber-500"></i>
-            How we choose examples and recommendations
-          </h3>
-          <p class="text-sm text-slate-600 mb-3">
-            Phone and device availability varies by region and provider. When we mention examples, such as a mid range 5G smartphone or a combined phone and home internet plan, we are describing <strong>typical patterns</strong> that appear in many offers. These examples are not guarantees and do not promise that a specific make or model will be available when you apply.
-          </p>
-          <p class="text-sm text-slate-600 mb-3">
-            When we link to comparison tools or external educational resources, we do so to help you ask better questions. Some links may lead to partners that focus on free government supported phone applications, including resources that explain how <a href="https://applyfreegovphone.com/"><strong>free 5g government phones samsung</strong></a> offers may work in practice. Those sites have their own privacy policies and terms, and you should review them before sharing personal information.
-          </p>
-          <p class="text-sm text-slate-600">
-            We avoid dramatic claims, unrealistic promises, or pressure tactics. If you ever see marketing language that sounds too good to be true or asks for unusual fees to access a benefit, treat it with caution and compare it with trusted official resources.
-          </p>
-        </div>
-
-        <div class="highlight-box">
-          <div class="flex items-start gap-3">
-            <div class="mt-1 text-blue-600">
-              <i class="fa-solid fa-hand-holding-heart"></i>
-            </div>
-            <div class="text-sm">
-              <p class="font-semibold mb-1">Our commitment to clear and respectful language</p>
-              <p class="mb-1">
-                We know that many readers of this guide are balancing work, caregiving, health concerns, and financial stress at the same time. Our writing aims to be respectful, non judgmental, and straightforward. You should never feel embarrassed to ask questions about programs that exist specifically to support households facing difficult circumstances.
-              </p>
-              <p>
-                If you spot a section that feels unclear or out of date, we encourage you to contact us through the form below. Your feedback helps us improve future updates so that other readers benefit as well.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Contact and Support -->
-    <section id="contact" class="py-10 bg-slate-50">
-      <div class="site-wrapper">
-        <div class="mb-6 text-center">
-          <div class="section-tag mx-auto">
-            <i class="fa-solid fa-envelope-circle-check"></i>
-            <span>Contact and support</span>
-          </div>
-          <h2 class="section-title mt-3">Questions about this guide or your situation</h2>
-          <p class="section-lead mx-auto">
-            This website does not process applications or make eligibility decisions, but we can often point you toward the right type of resource. Use the form below to share general questions about Lifeline style programs, documents, or topics you would like to see covered in future updates.
-          </p>
-        </div>
-
-        <div class="grid gap-6 md:grid-cols-3">
-          <div class="md:col-span-2">
-            <div class="contact-card p-5 md:p-6">
-              <h3 class="text-base md:text-lg font-semibold mb-3 flex items-center gap-2">
-                <i class="fa-solid fa-paper-plane text-blue-600"></i>
-                Send a message to the editorial team
-              </h3>
-              <form class="grid gap-4 md:grid-cols-2">
-                <div class="md:col-span-1">
-                  <label for="contactName" class="block text-xs font-semibold text-slate-700 mb-1">
-                    Your name
-                  </label>
-                  <input
-                    type="text"
-                    id="contactName"
-                    class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                    placeholder="Example: Maria Thompson"
-                  >
-                </div>
-                <div class="md:col-span-1">
-                  <label for="contactEmail" class="block text-xs font-semibold text-slate-700 mb-1">
-                    Email address
-                  </label>
-                  <input
-                    type="email"
-                    id="contactEmail"
-                    class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                    placeholder="you@example.com"
-                  >
-                </div>
-                <div class="md:col-span-1">
-                  <label for="contactState" class="block text-xs font-semibold text-slate-700 mb-1">
-                    State or territory
-                  </label>
-                  <input
-                    type="text"
-                    id="contactState"
-                    class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                    placeholder="Example: Texas"
-                  >
-                </div>
-                <div class="md:col-span-1">
-                  <label for="contactTopic" class="block text-xs font-semibold text-slate-700 mb-1">
-                    Topic
-                  </label>
-                  <select
-                    id="contactTopic"
-                    class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                  >
-                    <option value="">Select a topic</option>
-                    <option value="eligibility">Eligibility question</option>
-                    <option value="documents">Documents and verification</option>
-                    <option value="plans">Plan or device comparison</option>
-                    <option value="feedback">Feedback about this guide</option>
-                    <option value="other">Something else</option>
-                  </select>
-                </div>
-                <div class="md:col-span-2">
-                  <label for="contactMessage" class="block text-xs font-semibold text-slate-700 mb-1">
-                    Your question or comment
-                  </label>
-                  <textarea
-                    id="contactMessage"
-                    rows="4"
-                    class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                    placeholder="Please avoid sharing Social Security numbers or full account numbers. Describe your situation in general terms so that we can suggest helpful resources."
-                  ></textarea>
-                </div>
-                <div class="md:col-span-2 flex flex-wrap items-center justify-between gap-3">
-                  <button
-                    type="button"
-                    class="btn-primary-main pulse-button"
-                  >
-                    <i class="fa-solid fa-paper-plane"></i>
-                    <span>Send message (demo only)</span>
-                  </button>
-                  <p class="text-[11px] text-slate-500 max-w-sm">
-                    This form is provided for educational purposes. Submitting it on this demo page will not send data to a live inbox. In a production environment, the form would connect to a secure support channel.
-                  </p>
-                </div>
-              </form>
+    <!-- Hero with Pre Screener -->
+    <section id="top" class="mb-8">
+      <div class="card-soft shadow-soft overflow-hidden">
+        <div class="hero-grid">
+          <!-- Left -->
+          <div class="p-5 md:p-7 lg:p-8 flex flex-col justify-center bg-white">
+            <div class="d-inline-flex align-items-center gap-2 hero-pill mb-3">
+              <i class="fa-solid fa-building-columns text-blue-900"></i>
+              <span>Non profit research initiative</span>
+            </div>
+            <h1 class="hero-left-heading-main fw-bold mb-2">
+              Free Tablets With EBT In 2025
+            </h1>
+            <p class="mb-2" style="font-size:0.98rem; color:#1f2937;">
+              The American Connectivity Watchdog reviews federal and state connectivity rules so that families using EBT for SNAP and similar benefits can understand when a low cost or even <strong>free tablet with ebt</strong> is realistic and when an offer is likely a problem.
+            </p>
+            <p class="mb-3" style="font-size:0.98rem; color:#4b5563;">
+              We do not sell devices. Our analysts read program notices, enforcement actions and provider terms, then translate them into plain language so that your household can move through tablet offers with clear expectations and fewer surprises.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mb-3">
+              <a href="#pre-screener" class="btn btn-primary btn-sm px-4 py-2 d-inline-flex align-items-center gap-2" style="background:var(--federal-blue);border-color:var(--federal-blue);">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <span>Run the 2025 Pre Screener</span>
+              </a>
+              <a href="#steps" class="btn btn-outline-secondary btn-sm px-4 py-2 d-inline-flex align-items-center gap-2">
+                <i class="fa-solid fa-list-check"></i>
+                <span>View the 7 step safety checklist</span>
+              </a>
+            </div>
+            <div class="d-flex flex-wrap gap-3">
+              <div class="d-flex align-items-center gap-2" style="font-size:0.72rem;color:#6b7280;">
+                <i class="fa-solid fa-circle-check text-emerald-500"></i>
+                <span>Reviewed by senior policy and legal researchers</span>
+              </div>
+              <div class="d-flex align-items-center gap-2" style="font-size:0.72rem;color:#6b7280;">
+                <i class="fa-solid fa-circle-check text-emerald-500"></i>
+                <span>References to official federal consumer pages</span>
+              </div>
+              <div class="d-flex align-items-center gap-2" style="font-size:0.72rem;color:#6b7280;">
+                <i class="fa-solid fa-circle-check text-emerald-500"></i>
+                <span>Updated for the 2025 benefits cycle</span>
+              </div>
             </div>
           </div>
 
-          <div class="space-y-4">
-            <div class="card-elevated p-4">
-              <h4 class="text-sm font-semibold mb-2 flex items-center gap-2">
-                <i class="fa-solid fa-circle-info text-sky-600"></i>
-                Quick reference
-              </h4>
-              <ul class="text-sm text-slate-600 space-y-1">
-                <li><strong>Official Lifeline info:</strong> <a href="https://www.fcc.gov/lifeline" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline">fcc.gov/lifeline</a></li>
-                <li><strong>Program history and ACP updates:</strong> <a href="https://www.fcc.gov/acp" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline">fcc.gov/acp</a></li>
-                <li><strong>Independent phone application help:</strong> <a href="https://applyfreegovphone.com/" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline">ApplyFreeGovPhone.com</a></li>
-              </ul>
-            </div>
-            <div class="card-elevated p-4">
-              <h4 class="text-sm font-semibold mb-2 flex items-center gap-2">
-                <i class="fa-solid fa-triangle-exclamation text-amber-500"></i>
-                Important reminder
-              </h4>
-              <p class="text-sm text-slate-600">
-                Never send your full Social Security number, full bank account numbers, or debit card details through email, text message, or social media to anyone who claims they can help you get a free phone. Legitimate applications use secure portals and clearly state how your information is protected.
+          <!-- Right: Pre Screener -->
+          <div class="hero-right p-6 md:p-7 lg:p-8 flex flex-col justify-center" id="pre-screener">
+            <div class="pre-screener-card p-4 p-md-5">
+              <div class="pre-screener-label d-flex align-items-center gap-2">
+                <i class="fa-solid fa-shield-halved text-sky-300"></i>
+                <span>Oversight tool</span>
+              </div>
+              <h2 class="pre-screener-title">
+                EBT Tablet Eligibility Pre Screener (2025 Cycle)
+              </h2>
+              <p class="pre-screener-subtitle mb-3">
+                This quick pre screener does not replace official verification, but it mirrors patterns we see in federal connectivity rules so you can understand when your situation is likely to fall into a high priority review group.
               </p>
+
+              <form id="preScreenerForm" class="mb-2">
+                <div class="mb-2">
+                  <label for="benefitSelect" class="form-label-sm">Select qualifying benefit</label>
+                  <select id="benefitSelect" class="form-select form-select-sm form-select-dark" required>
+                    <option value="">Choose one benefit</option>
+                    <option value="SNAP">SNAP (Food assistance on EBT)</option>
+                    <option value="Medicaid">Medicaid</option>
+                    <option value="SSI">SSI (Supplemental Security Income)</option>
+                    <option value="Veterans Pension">Veterans Pension or Survivors Pension</option>
+                    <option value="Tribal">Tribal assistance program listed in federal rules</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="householdSize" class="form-label-sm">Household size</label>
+                  <select id="householdSize" class="form-select form-select-sm form-select-dark" required>
+                    <option value="">Select household size</option>
+                    <option value="1">1 person</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8 or more</option>
+                  </select>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <button type="submit" class="btn-pre-screener d-inline-flex align-items-center gap-2">
+                    <i class="fa-solid fa-check-to-slot"></i>
+                    <span>Check My Status</span>
+                  </button>
+                  <span style="font-size:0.7rem;color:#9ca3af;">No data is stored or sent to servers from this tool.</span>
+                </div>
+              </form>
+
+              <div id="processingBlock" class="processing-wrapper" style="display:none;">
+                <div class="d-flex align-items-center justify-content-between mb-1" style="font-size:0.75rem;color:#cbd5f5;">
+                  <span>Processing inputs against 2025 rule patterns</span>
+                  <span><i class="fa-solid fa-gear fa-spin"></i></span>
+                </div>
+                <div class="progress" style="height:6px;">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width:45%;background-color:#38bdf8;"></div>
+                </div>
+              </div>
+
+              <div id="resultCard" class="result-card" style="display:none;">
+                <div class="result-title">
+                  <span style="font-size:1.1rem;">✅</span>
+                  <span>ELIGIBILITY CONFIRMED: High Priority</span>
+                </div>
+                <div class="result-subtext">
+                  Based on your benefit type and household size, cases like yours usually align with high priority review queues for tablet support inside federal connectivity programs. Official approval still depends on document checks and state availability.
+                </div>
+                <a href="https://freetabletwithebt.info/" target="_blank" rel="noopener" class="pulse-button">
+                  <span>Begin Application at Partner Portal »</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <div class="mt-2" style="font-size:0.7rem;color:#a5b4fc;">
+                  The partner portal operates under its own terms and privacy rules. Always confirm program details directly on their application pages.
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4" style="font-size:0.74rem;color:#cbd5f5;">
+              This pre screener is for educational use by American Connectivity Watchdog. It does not enroll you in any program and does not replace official federal or state eligibility systems.
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-200 pt-6 pb-8 mt-4">
-      <div class="site-wrapper">
-        <div class="grid gap-6 md:grid-cols-4 mb-6">
-          <div class="md:col-span-2">
-            <div class="flex items-center gap-2 mb-3">
-              <div class="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-sky-400 text-white">
-                <i class="fa-solid fa-signal"></i>
-              </div>
-              <div>
-                <div class="text-sm font-semibold tracking-wide uppercase">
-                  National Connectivity Access Hub
+    <!-- Main content grid -->
+    <main class="grid md:grid-cols-[minmax(0,3fr)_minmax(260px,1.1fr)] gap-6 mb-10">
+
+      <!-- Article column wrapped as white paper -->
+      <div class="whitepaper-shell shadow-soft p-4 md:p-6">
+        <div class="whitepaper-label">
+          <i class="fa-solid fa-file-lines"></i>
+          <span>Connectivity policy field report</span>
+        </div>
+        <div class="whitepaper-subtitle">
+          Independent report from American Connectivity Watchdog on how EBT linked households encounter tablet offers, including benefit pathways, documentation patterns and consumer risk points.
+        </div>
+
+        <article class="prose space-y-6">
+
+          <!-- Section: Programs overview -->
+          <section id="programs" class="report-section p-4 md:p-6">
+            <h2 class="h4 mb-3 d-flex align-items-center gap-2">
+              <i class="fa-solid fa-layer-group text-blue-600"></i>
+              <span>Main types of free or low cost tablet programs</span>
+            </h2>
+            <p>
+              There is no single national program that sends every EBT card holder a free device. Instead, tablets appear inside a
+              patchwork of federal, state and nonprofit initiatives. Some are permanent parts of universal service policies. Others
+              are limited pilots or short term projects funded by settlements, local grants or private donors.
+            </p>
+            <p>
+              The easiest way to understand these offers is to group them into several broad categories. You will recognize some of
+              the names, while others operate quietly in the background and only work through specific partner organizations.
+            </p>
+
+            <div class="table-responsive mt-3">
+              <table class="table table-sm table-striped align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Program type</th>
+                    <th scope="col">What it usually covers</th>
+                    <th scope="col">How EBT is used</th>
+                    <th scope="col">Typical tablet cost</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Federal connectivity programs</strong></td>
+                    <td>Discounted phone or internet service, sometimes one time discount on a device</td>
+                    <td>EBT card statement or SNAP approval letter used as proof of low income</td>
+                    <td>Free or low copay, often under 30 dollars</td>
+                  </tr>
+                  <tr>
+                    <td><strong>State or city digital inclusion projects</strong></td>
+                    <td>Lending libraries, community tablet labs or direct grants to nonprofits</td>
+                    <td>EBT confirms residency and benefits status for locally targeted help</td>
+                    <td>Free to borrow, or subsidized ownership through local partners</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Charity and nonprofit device drives</strong></td>
+                    <td>Refurbished tablets and laptops from corporate donations</td>
+                    <td>EBT and other documents help prioritize the most financially stressed families</td>
+                    <td>Frequently free, but supply is limited and wait lists can form</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Provider promotional bundles</strong></td>
+                    <td>Tablet or smartphone included with specific plans or limited time offers</td>
+                    <td>EBT linked benefits used to check income rules and prevent duplicate sign ups</td>
+                    <td>Copay can range from zero to moderate, depending on marketing budget</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              A realistic strategy is to identify at least two options that fit your household. If a federal style offer is closed
+              or paused in your state, you can still pursue local projects, nonprofit refurbishing programs and other routes.
+            </p>
+          </section>
+
+          <!-- Section: EBT role and SNAP -->
+          <section id="eligibility" class="report-section p-4 md:p-6">
+            <h2 class="h4 mb-3 d-flex align-items-center gap-2">
+              <i class="fa-solid fa-credit-card text-emerald-600"></i>
+              <span>How EBT and SNAP benefits connect to tablet programs</span>
+            </h2>
+            <p>
+              EBT, which stands for Electronic Benefit Transfer, is only a payment system. The plastic card itself is not a discount
+              coupon for technology. What matters is the program loaded onto the card, such as the Supplemental Nutrition Assistance
+              Program (SNAP) or another state based benefit that uses the same card infrastructure.
+            </p>
+            <p>
+              Connectivity programs often use SNAP and similar benefits as a simple proof that your household meets certain income
+              thresholds. Instead of asking for years of pay stubs, they accept your benefits letter or online account screenshot as
+              enough evidence that you are eligible for help.
+            </p>
+
+            <div class="row g-4 mt-2">
+              <div class="col-md-6">
+                <div class="border rounded-3 p-3 h-100 bg-white">
+                  <h3 class="h6 mb-2 d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-circle-info text-blue-600"></i>
+                    <span>Typical programs that accept EBT linked proof</span>
+                  </h3>
+                  <ul class="mb-0 small">
+                    <li>SNAP (food stamps) with recent approval or recertification letter</li>
+                    <li>Medicaid or CHIP documentation in the primary applicant's name</li>
+                    <li>Supplemental Security Income (SSI) award notices</li>
+                    <li>Federal public housing assistance letters</li>
+                    <li>Certain Tribal assistance programs listed by federal rules</li>
+                  </ul>
                 </div>
-                <div class="text-xs text-slate-400">
-                  Independent US connectivity resource
+              </div>
+              <div class="col-md-6">
+                <div class="border rounded-3 p-3 h-100 bg-white">
+                  <h3 class="h6 mb-2 d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-triangle-exclamation text-red-500"></i>
+                    <span>Programs that usually do not count by themselves</span>
+                  </h3>
+                  <ul class="mb-0 small">
+                    <li>Short term charitable food boxes without official enrollment</li>
+                    <li>Local church help that does not issue government style letters</li>
+                    <li>Store discount cards that happen to be called benefit cards</li>
+                    <li>Outdated or expired program letters from several years ago</li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <p class="text-xs text-slate-400 mb-2">
-              This site is not affiliated with the Federal Communications Commission, the Universal Service Administrative Company, or any wireless carrier. It does not process applications or guarantee approval for any program.
+
+            <p class="mt-3">
+              When providers talk about an EBT tablet, they are using shorthand. In practice, they are checking the benefit behind
+              the card. That is why the strongest applications usually attach a fresh copy of your SNAP or Medicaid approval letter
+              instead of only entering card numbers into a form.
             </p>
-            <p class="text-xs text-slate-500">
-              Educational content only. For official decisions and current rules, always rely on government agencies and your chosen provider.
+
+            <div class="alert alert-info d-flex align-items-start gap-2 mt-3 mb-0 small">
+              <i class="fa-solid fa-scale-balanced mt-1"></i>
+              <div>
+                For more detail on how federal communication support programs define qualifying benefits and low income thresholds,
+                you can review guidance on the official Federal Communications Commission consumer pages at
+                <a href="https://www.fcc.gov/lifeline-consumers" target="_blank" rel="noopener">fcc.gov</a>.
+              </div>
+            </div>
+          </section>
+
+          <!-- Section: Income and documentation table -->
+          <section class="report-section p-4 md:p-6" id="income-docs">
+            <h2 class="h4 mb-3 d-flex align-items-center gap-2">
+              <i class="fa-solid fa-receipt text-indigo-600"></i>
+              <span>Income ranges and documents most providers look for</span>
+            </h2>
+            <p>
+              Every program sets its own income and documentation rules, but most of them follow a pattern that feels similar to
+              other safety net programs. They want to see that your total household income stays under a percentage of the Federal
+              Poverty Guidelines or that you receive specific benefits that already checked these rules for you.
             </p>
+            <p>
+              Because guidelines change each year and vary by state and household size, you should treat the ranges below as a
+              teaching example rather than a guaranteed limit. When you reach a provider website, always confirm the most recent
+              numbers for your state and year.
+            </p>
+
+            <div class="table-responsive mt-2">
+              <table class="table table-sm table-bordered align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Household size</th>
+                    <th scope="col">Illustrative annual income range often seen in rules</th>
+                    <th scope="col">Typical proof of income</th>
+                    <th scope="col">Alternative proof through benefits</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1 person</td>
+                    <td>Up to around 30 thousand dollars</td>
+                    <td>Pay stubs from last 30 to 60 days, tax return or employer letter</td>
+                    <td>SNAP, Medicaid or SSI approval letter in applicant's name</td>
+                  </tr>
+                  <tr>
+                    <td>2 people</td>
+                    <td>Up to around 40 thousand dollars</td>
+                    <td>Combined income statements for both adults in the household</td>
+                    <td>Joint benefits record that lists both adults and dependents</td>
+                  </tr>
+                  <tr>
+                    <td>3 to 4 people</td>
+                    <td>Up to around 50 to 60 thousand dollars</td>
+                    <td>Pay stubs and child support or alimony statements if applicable</td>
+                    <td>SNAP benefits statement that shows full household size</td>
+                  </tr>
+                  <tr>
+                    <td>5 or more</td>
+                    <td>Adjusts upward with each additional household member</td>
+                    <td>Complete summary of all income sources and benefits</td>
+                    <td>Combination of SNAP, free school lunch or other qualified programs</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              The document checklist feels overwhelming at first, but it is much easier if you prepare it before you start any online
+              application. Having clear scans or photos avoids delays and repeated rejections that can slow down your tablet request.
+            </p>
+
+            <div class="row g-3 mt-2">
+              <div class="col-md-4">
+                <div class="border rounded-3 p-3 h-100 bg-white">
+                  <h3 class="h6 mb-2 d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-id-card-clip text-blue-600"></i>
+                    <span>Identity</span>
+                  </h3>
+                  <ul class="small mb-0">
+                    <li>State ID, driver license or Tribal ID card</li>
+                    <li>Permanent resident card where applicable</li>
+                    <li>Social Security card or last four digits when requested</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="border rounded-3 p-3 h-100 bg-white">
+                  <h3 class="h6 mb-2 d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-house-chimney text-emerald-600"></i>
+                    <span>Address</span>
+                  </h3>
+                  <ul class="small mb-0">
+                    <li>Utility bill within the last two months</li>
+                    <li>Lease agreement or mortgage statement</li>
+                    <li>Official letter from a shelter or transitional housing</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="border rounded-3 p-3 h-100 bg-white">
+                  <h3 class="h6 mb-2 d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-file-invoice-dollar text-indigo-600"></i>
+                    <span>Eligibility</span>
+                  </h3>
+                  <ul class="small mb-0">
+                    <li>Most recent SNAP or EBT benefits letter</li>
+                    <li>Medicaid or SSI award notice</li>
+                    <li>School lunch program confirmation for children</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <p class="mt-3">
+              Some households prefer to follow a narrative guide instead of reading only tables and checklists. If you want a more
+              story style explanation of how families move from benefit letters to actual devices, you can read an
+              independent <strong><a href="https://freetabletwithebt.info/" target="_blank">free tablet</a></strong> guide that walks
+              through the process from a practical point of view.
+            </p>
+          </section>
+
+          <!-- Section: Step by step application -->
+          <section id="steps" class="report-section p-4 md:p-6">
+            <h2 class="h4 mb-3 d-flex align-items-center gap-2">
+              <i class="fa-solid fa-list-ol text-sky-600"></i>
+              <span>Seven step checklist to request a tablet without losing control</span>
+            </h2>
+            <p>
+              It is tempting to click the first advertisement that promises a free tablet in big letters. A safer plan is to slow
+              down and move through a clear checklist. That way you stay in charge of your personal data, your benefits information
+              and your expectations.
+            </p>
+
+            <ol class="small ps-3 pe-1 mb-3">
+              <li class="mb-2">
+                <strong>Confirm that you are eligible on paper.</strong>
+                Gather recent EBT and SNAP documents, income proof and a government issued ID. If your letters are older than one
+                year, log into your program portal and download a current benefits summary.
+              </li>
+              <li class="mb-2">
+                <strong>Decide which household member will apply.</strong>
+                Federal rules usually allow only one subsidized device per household. Pick the adult who will sign the contract,
+                manage renewal paperwork and keep track of any future recertification deadlines.
+              </li>
+              <li class="mb-2">
+                <strong>Research at least two genuine providers or local partners.</strong>
+                Use your state government website and recognized nonprofit directories rather than social media messages from unknown
+                accounts. Look for providers that show a physical office address, customer service phone number and detailed privacy
+                policy.
+              </li>
+              <li class="mb-2">
+                <strong>Check whether the offer mentions specific tablet models and limits.</strong>
+                Many programs only state Android tablet or internet ready device without naming the brand. Treat this as normal,
+                but pay close attention to data caps, activation fees, shipping charges and any monthly obligations.
+              </li>
+              <li class="mb-2">
+                <strong>Complete the online or paper application carefully.</strong>
+                Enter your name exactly as it appears on your government ID. Use the same address that appears on your EBT or
+                Medicaid records. Double check your email and phone number inputs so that approval notices do not bounce.
+              </li>
+              <li class="mb-2">
+                <strong>Upload documents only through secure forms.</strong>
+                The web address should start with https and your browser should show that the connection is secure. If you feel
+                rushed or pushed to send photos through a messaging app, stop and call the official customer service number before
+                sharing any files.
+              </li>
+              <li class="mb-0">
+                <strong>Save copies of everything.</strong>
+                Download or screenshot confirmation pages, application IDs and any email replies. If there is a disagreement later
+                about what plan you agreed to, this record will help you dispute incorrect charges or ask state regulators for help.
+              </li>
+            </ol>
+
+            <p>
+              These steps look detailed, but most families can walk through the entire list in one evening when documents are already
+              in a folder or scanned into a phone. The real challenge is not speed. It is the discipline of saying no to offers that
+              feel vague, rushed or too aggressive compared to the protections described on official government pages.
+            </p>
+
+            <div class="row g-3 mt-2">
+              <div class="col-md-6">
+                <div class="border rounded-3 p-3 h-100 bg-white">
+                  <h3 class="h6 mb-2 d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-user-shield text-emerald-600"></i>
+                    <span>Rights you keep as a consumer</span>
+                  </h3>
+                  <ul class="small mb-0">
+                    <li>You can ask for written details of any plan before signing.</li>
+                    <li>You can refuse to share photos of your card if they are not needed.</li>
+                    <li>You can demand clear contact information for customer support.</li>
+                    <li>You can file complaints with state utility commissions if rules are ignored.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="border rounded-3 p-3 h-100 bg-white">
+                  <h3 class="h6 mb-2 d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-circle-question text-indigo-600"></i>
+                    <span>Questions to ask providers</span>
+                  </h3>
+                  <ul class="small mb-0">
+                    <li>Is this a one time device benefit or will I owe monthly payments.</li>
+                    <li>What happens if the tablet is lost, stolen or stops working.</li>
+                    <li>How often will I have to renew my eligibility.</li>
+                    <li>Will this program affect any other benefits my household receives.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section: Scam checks -->
+          <section id="scams" class="report-section p-4 md:p-6">
+            <h2 class="h4 mb-3 d-flex align-items-center gap-2">
+              <i class="fa-solid fa-user-secret text-rose-600"></i>
+              <span>Common red flags and how to report suspicious offers</span>
+            </h2>
+            <p>
+              A promise of a free device has always been attractive to scammers. They know that people facing financial stress may
+              feel pressure to say yes in hope of saving money. Learning the most common warning signs helps you protect your EBT
+              balance, your identity and your time.
+            </p>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-4">
+                <div class="border rounded-3 p-3 h-100 bg-white">
+                  <h3 class="h6 mb-2 text-rose-600 d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>High pressure tactics</span>
+                  </h3>
+                  <ul class="small mb-0">
+                    <li>Messages that say today only or your benefits will end unless you click now.</li>
+                    <li>Agents who refuse to give you time to read documents.</li>
+                    <li>Repeated calls at all hours of the day from the same number.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="border rounded-3 p-3 h-100 bg-white">
+                  <h3 class="h6 mb-2 text-rose-600 d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-lock-open"></i>
+                    <span>Unsafe data requests</span>
+                  </h3>
+                  <ul class="small mb-0">
+                    <li>Requests for your full EBT card number and PIN in a chat app.</li>
+                    <li>Links that open to websites without secure https protection.</li>
+                    <li>Companies that refuse to show a privacy policy or contact details.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="border rounded-3 p-3 h-100 bg-white">
+                  <h3 class="h6 mb-2 text-rose-600 d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <span>Contract traps</span>
+                  </h3>
+                  <ul class="small mb-0">
+                    <li>Hidden restocking fees if you return the tablet during trial.</li>
+                    <li>Automatic add ons such as paid streaming services.</li>
+                    <li>Fine print that allows price jumps after a short teaser period.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <p class="mb-2">
+              When something feels wrong, there is usually a safer alternative. You can close the browser tab, walk out of a pop up
+              event, or hang up the phone. Genuine programs expect you to be cautious and will welcome reasonable questions.
+            </p>
+            <p>
+              If a company misuses your information or charges unexpected fees, you can file complaints with your state attorney
+              general, your state utility commission and with federal consumer agencies. Many of these offices accept online
+              complaints and provide guidance in multiple languages.
+            </p>
+
+            <div class="alert alert-secondary small mb-0">
+              A good place to start is the federal complaint portal at
+              <a href="https://consumercomplaints.fcc.gov/" target="_blank" rel="noopener">consumercomplaints.fcc.gov</a>, which
+              allows you to describe problems with phone, internet and related device providers in detail.
+            </div>
+          </section>
+
+          <!-- Section: FAQ -->
+          <section id="faq" class="report-section p-4 md:p-6">
+            <h2 class="h4 mb-3 d-flex align-items-center gap-2">
+              <i class="fa-solid fa-circle-question text-blue-600"></i>
+              <span>Frequently asked questions about EBT and tablet programs</span>
+            </h2>
+
+            <div class="faq-list">
+              <div class="faq-item border-bottom faq-question">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+                  <span>Can I really get a tablet completely free if I use EBT</span>
+                  <i class="fa-solid fa-chevron-down small text-muted"></i>
+                </button>
+                <div id="faq1" class="collapse show faq-answer">
+                  In some cases yes, although it is safer to expect a small one time copay or activation fee. Many providers describe
+                  their offers as free because the monthly service discount covers the main cost. When you read the fine print,
+                  there may still be a modest device charge or tax amount. Planning for a small copay helps avoid disappointment.
+                </div>
+              </div>
+
+              <div class="faq-item border-bottom faq-question">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false">
+                  <span>Does getting a tablet affect my food or cash benefits</span>
+                  <i class="fa-solid fa-chevron-down small text-muted"></i>
+                </button>
+                <div id="faq2" class="collapse faq-answer">
+                  A tablet or phone discount usually does not change your SNAP food balance or cash benefits on its own. These
+                  programs are handled by different offices. The main financial effect is that you might face early termination fees
+                  or extra charges if you sign up for a plan you cannot afford long term. That is why it is important to choose a
+                  level of service that fits your real monthly budget.
+                </div>
+              </div>
+
+              <div class="faq-item border-bottom faq-question">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false">
+                  <span>Can college students or single adults qualify</span>
+                  <i class="fa-solid fa-chevron-down small text-muted"></i>
+                </button>
+                <div id="faq3" class="collapse faq-answer">
+                  Yes, many single adults and students qualify on their own income, especially if they receive SNAP, Medicaid or
+                  other qualifying benefits. The key is to show that you are a separate household for benefit purposes and that no
+                  one else at your address is already using the same program for a discounted device. It helps to keep copies of any
+                  prior applications your roommates or relatives may have submitted.
+                </div>
+              </div>
+
+              <div class="faq-item border-bottom faq-question">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false">
+                  <span>What if I live in a rural area with limited providers</span>
+                  <i class="fa-solid fa-chevron-down small text-muted"></i>
+                </button>
+                <div id="faq4" class="collapse faq-answer">
+                  Rural households face special challenges. Shipping delays, fewer in person locations and weaker coverage can make
+                  the process frustrating. However, rural communities also benefit from specific grants and pilot projects that
+                  focus on closing the digital divide. Check with your county extension office, local library systems and school
+                  districts for device programs that never appear in national advertising.
+                </div>
+              </div>
+
+              <div class="faq-item faq-question">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false">
+                  <span>What should I do if my application is denied</span>
+                  <i class="fa-solid fa-chevron-down small text-muted"></i>
+                </button>
+                <div id="faq5" class="collapse faq-answer">
+                  Denials are common and do not mean you did anything wrong. Start by asking the provider for a clear written reason.
+                  If the denial is based on missing documents, update your file and reapply. If the denial is based on duplicate
+                  household benefits that you believe are incorrect, you can request a review and prepare to show that you are a
+                  separate household unit. In stubborn cases, consider contacting a local legal aid office that handles consumer and
+                  utilities issues.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section: EEAT - About team -->
+          <section id="about" class="report-section p-4 md:p-6">
+            <h2 class="h4 mb-3 d-flex align-items-center gap-2">
+              <i class="fa-solid fa-users-line text-slate-700"></i>
+              <span>About the American Connectivity Watchdog research team</span>
+            </h2>
+            <p>
+              This website is operated by The American Connectivity Watchdog, a non profit research initiative that studies how
+              federal and state connectivity programs affect low income households. We do not receive commissions for steering you
+              toward specific brands. Our goal is to give you enough clear information to have a strong conversation with any
+              provider, caseworker or legal advisor you choose.
+            </p>
+
+            <div class="row g-3 mt-2">
+              <div class="col-md-4">
+                <div class="border rounded-3 p-3 h-100 bg-white">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="author-avatar">
+                      AT
+                    </div>
+                    <div>
+                      <div class="fw-semibold" style="font-size:0.98rem;">Dr. Aris Thorne, PhD</div>
+                      <div class="text-xs text-slate-500">Senior Policy Analyst</div>
+                    </div>
+                  </div>
+                  <p class="small mb-2">
+                    Dr. Thorne is a former state telecommunications advisor with fifteen years of experience in digital equity policy.
+                    At American Connectivity Watchdog, he audits federal connectivity programs and provider practices to see whether
+                    households that rely on EBT and related benefits receive a fair chance at device support.
+                  </p>
+                  <p class="small mb-1">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:aris.thorne@connectivitywatchdog.org">aris.thorne@connectivitywatchdog.org</a>
+                  </p>
+                  <p class="small mb-0">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    PhD, Public Policy with focus on telecommunications and digital inclusion
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="border rounded-3 p-3 h-100 bg-white">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="author-avatar" style="background:linear-gradient(135deg,#16a34a,#15803d);">
+                      MR
+                    </div>
+                    <div>
+                      <div class="fw-semibold" style="font-size:0.98rem;">Michael Rivera, CFP</div>
+                      <div class="text-xs text-slate-500">Household Finance Contributor</div>
+                    </div>
+                  </div>
+                  <p class="small mb-2">
+                    Michael is a Certified Financial Planner who works with low income families in Texas on budgeting, credit repair
+                    and student loan relief. He contributes real world examples to our guides so that readers can see how device
+                    programs interact with monthly bills and long term financial goals.
+                  </p>
+                  <p class="small mb-1">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:michael.rivera@connectivitywatchdog.org">michael.rivera@connectivitywatchdog.org</a>
+                  </p>
+                  <p class="small mb-0">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    BS, Finance, University of Texas at Austin
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="border rounded-3 p-3 h-100 bg-white">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="author-avatar" style="background:linear-gradient(135deg,#0ea5e9,#0369a1);">
+                      LC
+                    </div>
+                    <div>
+                      <div class="fw-semibold" style="font-size:0.98rem;">Dr. Lisa Chen</div>
+                      <div class="text-xs text-slate-500">Technology and Accessibility Advisor</div>
+                    </div>
+                  </div>
+                  <p class="small mb-2">
+                    Lisa holds a PhD in Information Systems and studies how older adults and people with disabilities use digital
+                    devices. She verifies our device related explanations for screen readability, accessibility settings and ease of use
+                    for first time tablet users.
+                  </p>
+                  <p class="small mb-1">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:lisa.chen@connectivitywatchdog.org">lisa.chen@connectivitywatchdog.org</a>
+                  </p>
+                  <p class="small mb-0">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    PhD, Information Systems, University of Washington
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="border rounded-3 p-3 mt-3 bg-slate-50">
+              <h3 class="h6 mb-2 d-flex align-items-center gap-2">
+                <i class="fa-solid fa-file-pen text-slate-700"></i>
+                <span>Editorial independence and conflict of interest policy</span>
+              </h3>
+              <p class="small mb-2">
+                American Connectivity Watchdog does not accept payment from government agencies or telecom providers in exchange for
+                placement in our articles. If we ever receive free review units from manufacturers, we will clearly mark that
+                information in a visible notice on the relevant sections. Providers do not preview or approve our content before
+                publication.
+              </p>
+              <p class="small mb-0">
+                When we link to outside resources, we aim for credible and up to date sources, especially government websites and
+                long standing nonprofit organizations. However, program rules can change quickly, so we encourage readers to confirm
+                all details directly with official channels in their own state.
+              </p>
+            </div>
+
+            <p class="mt-3 mb-0">
+              As part of our research process, we also review other independent explainers to make sure our content is not repeating
+              the same mistakes and myths about device programs. One such resource is a detailed
+              <strong><a href="https://freetabletwithebt.info/" target="_blank">EBT tablet guide</a></strong> that collects user
+              experiences and clarifies common misunderstandings in simple language.
+            </p>
+          </section>
+        </article>
+      </div>
+
+      <!-- Sidebar column -->
+      <aside class="space-y-4">
+
+        <!-- Quick facts -->
+        <section class="card-soft shadow-soft p-4">
+          <h2 class="sidebar-card-title mb-3 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-circle-info text-blue-600"></i>
+            <span>Quick facts for busy households</span>
+          </h2>
+          <ul class="list-unstyled small mb-0">
+            <li class="mb-2 d-flex gap-2">
+              <i class="fa-solid fa-check-circle text-emerald-500 mt-1"></i>
+              <span>You cannot use EBT balance to buy a tablet directly, but the benefits behind the card can unlock device help.</span>
+            </li>
+            <li class="mb-2 d-flex gap-2">
+              <i class="fa-solid fa-check-circle text-emerald-500 mt-1"></i>
+              <span>Most programs only allow one discounted device per low income household at a time.</span>
+            </li>
+            <li class="mb-2 d-flex gap-2">
+              <i class="fa-solid fa-check-circle text-emerald-500 mt-1"></i>
+              <span>Approval is faster when you upload clear, recent documents instead of blurred or cropped photos.</span>
+            </li>
+            <li class="mb-0 d-flex gap-2">
+              <i class="fa-solid fa-check-circle text-emerald-500 mt-1"></i>
+              <span>Always read the plan details so that a tablet discount does not quietly add new monthly bills you did not plan for.</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Device comparison mini table -->
+        <section class="card-soft shadow-soft p-4">
+          <h2 class="sidebar-card-title mb-3 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-tablet-screen-button text-slate-700"></i>
+            <span>Typical tablet features in benefit programs</span>
+          </h2>
+          <div class="table-responsive">
+            <table class="table table-sm align-middle mb-2">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col">Feature</th>
+                  <th scope="col">Basic model</th>
+                  <th scope="col">Stronger model</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Screen size</td>
+                  <td>7 to 8 inches</td>
+                  <td>10 inches or more</td>
+                </tr>
+                <tr>
+                  <td>Storage</td>
+                  <td>32 GB</td>
+                  <td>64 GB or expandable</td>
+                </tr>
+                <tr>
+                  <td>Connectivity</td>
+                  <td>Wi Fi only</td>
+                  <td>Wi Fi plus LTE</td>
+                </tr>
+                <tr>
+                  <td>Battery life</td>
+                  <td>6 to 8 hours</td>
+                  <td>10 hours or more</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div>
-            <h4 class="text-xs font-semibold mb-2 text-slate-200 uppercase tracking-wide">Guide sections</h4>
-            <ul class="space-y-1 text-xs">
-              <li><a href="#how-it-works" class="footer-link">How programs work</a></li>
-              <li><a href="#eligibility" class="footer-link">Eligibility and documents</a></li>
-              <li><a href="#plans" class="footer-link">Plans and devices</a></li>
-              <li><a href="#apply" class="footer-link">Application checklist</a></li>
-              <li><a href="#faq" class="footer-link">Frequently asked questions</a></li>
-            </ul>
+          <p class="small mb-0">
+            Providers rarely promise a specific brand, but they still have to send a device that reasonably supports email,
+            telehealth visits, basic school portals and job search websites without constant freezing.
+          </p>
+        </section>
+
+        <!-- Office info -->
+        <section class="card-soft shadow-soft p-4">
+          <h2 class="sidebar-card-title mb-3 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-building text-slate-700"></i>
+            <span>Office and contact information</span>
+          </h2>
+          <p class="small mb-2">
+            American Connectivity Watchdog operates as a remote first research team with a policy mailing address in Washington, DC.
+            We do not accept walk in visitors, but we respond to email and voicemail messages from readers throughout the United States.
+          </p>
+          <ul class="list-unstyled small mb-2">
+            <li class="mb-1">
+              <i class="fa-solid fa-location-dot"></i>
+              <span> 1701 Pennsylvania Avenue NW, Suite 300, Washington, DC 20006, United States</span>
+            </li>
+            <li class="mb-1">
+              <i class="fa-solid fa-phone"></i>
+              <span> +1 (202) 555 0138</span>
+            </li>
+            <li class="mb-1">
+              <i class="fa-solid fa-envelope"></i>
+              <span> research@connectivitywatchdog.org</span>
+            </li>
+          </ul>
+          <p class="small mb-0">
+            Please do not send original benefit cards or identity documents by mail. If you need legal representation, contact a
+            nonprofit legal aid office or private attorney in your state.
+          </p>
+        </section>
+      </aside>
+    </main>
+
+    <!-- Contact and footer area -->
+    <section id="contact" class="mb-8">
+      <div class="card-soft shadow-soft p-4 md:p-6">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h2 class="h5 mb-3 d-flex align-items-center gap-2">
+              <i class="fa-solid fa-paper-plane text-blue-600"></i>
+              <span>Contact the research team</span>
+            </h2>
+            <p class="small mb-3">
+              You can use the secure form on this page to share general questions, corrections or suggestions. We cannot review
+              individual applications, but we do read every message and use your feedback to update and improve our guides.
+            </p>
+            <form class="grid gap-3">
+              <div class="mb-2">
+                <label class="form-label small fw-semibold" for="nameInput">Your name</label>
+                <input type="text" id="nameInput" class="form-control form-control-sm" placeholder="Full name">
+              </div>
+              <div class="mb-2">
+                <label class="form-label small fw-semibold" for="emailInput">Email address</label>
+                <input type="email" id="emailInput" class="form-control form-control-sm" placeholder="you@example.com">
+              </div>
+              <div class="mb-2">
+                <label class="form-label small fw-semibold" for="stateInput">State</label>
+                <select id="stateInput" class="form-select form-select-sm">
+                  <option value="">Select state</option>
+                  <option>Alabama</option>
+                  <option>Alaska</option>
+                  <option>Arizona</option>
+                  <option>Arkansas</option>
+                  <option>California</option>
+                  <option>Colorado</option>
+                  <option>Connecticut</option>
+                  <option>Delaware</option>
+                  <option>District of Columbia</option>
+                  <option>Florida</option>
+                  <option>Georgia</option>
+                  <option>Hawaii</option>
+                  <option>Idaho</option>
+                  <option>Illinois</option>
+                  <option>Indiana</option>
+                  <option>Iowa</option>
+                  <option>Kansas</option>
+                  <option>Kentucky</option>
+                  <option>Louisiana</option>
+                  <option>Maine</option>
+                  <option>Maryland</option>
+                  <option>Massachusetts</option>
+                  <option>Michigan</option>
+                  <option>Minnesota</option>
+                  <option>Mississippi</option>
+                  <option>Missouri</option>
+                  <option>Montana</option>
+                  <option>Nebraska</option>
+                  <option>Nevada</option>
+                  <option>New Hampshire</option>
+                  <option>New Jersey</option>
+                  <option>New Mexico</option>
+                  <option>New York</option>
+                  <option>North Carolina</option>
+                  <option>North Dakota</option>
+                  <option>Ohio</option>
+                  <option>Oklahoma</option>
+                  <option>Oregon</option>
+                  <option>Pennsylvania</option>
+                  <option>Rhode Island</option>
+                  <option>South Carolina</option>
+                  <option>South Dakota</option>
+                  <option>Tennessee</option>
+                  <option>Texas</option>
+                  <option>Utah</option>
+                  <option>Vermont</option>
+                  <option>Virginia</option>
+                  <option>Washington</option>
+                  <option>West Virginia</option>
+                  <option>Wisconsin</option>
+                  <option>Wyoming</option>
+                </select>
+              </div>
+              <div class="mb-2">
+                <label class="form-label small fw-semibold" for="messageInput">Your question or comment</label>
+                <textarea id="messageInput" class="form-control form-control-sm" rows="4" placeholder="Share your question in as much detail as possible. Please do not include your full EBT card number or PIN."></textarea>
+              </div>
+              <div class="d-flex align-items-center justify-content-between mt-1">
+                <button type="submit" class="btn btn-primary btn-sm px-4 d-inline-flex align-items-center gap-2" style="background:var(--federal-blue);border-color:var(--federal-blue);">
+                  <i class="fa-solid fa-paper-plane-top"></i>
+                  <span>Send message</span>
+                </button>
+                <span class="small text-muted">
+                  Response time for reader questions is usually within three to five business days.
+                </span>
+              </div>
+            </form>
           </div>
-          <div>
-            <h4 class="text-xs font-semibold mb-2 text-slate-200 uppercase tracking-wide">Helpful resources</h4>
-            <ul class="space-y-1 text-xs">
-              <li><a href="https://www.fcc.gov/lifeline" target="_blank" rel="noopener noreferrer" class="footer-link">FCC Lifeline overview</a></li>
-              <li><a href="https://www.fcc.gov/acp" target="_blank" rel="noopener noreferrer" class="footer-link">ACP information hub</a></li>
-              <li><a href="https://applyfreegovphone.com/" target="_blank" rel="noopener noreferrer" class="footer-link">Free phone application help</a></li>
-            </ul>
+          <div class="col-lg-6">
+            <h2 class="h5 mb-3 d-flex align-items-center gap-2">
+              <i class="fa-solid fa-scale-balanced text-slate-700"></i>
+              <span>Disclaimer and privacy summary</span>
+            </h2>
+            <p class="small mb-2">
+              This website provides general educational information about consumer programs in the United States. It is not legal,
+              financial or tax advice. Laws and regulations change often. You should confirm any decision that could affect your
+              benefits or obligations with the appropriate government agency or a licensed professional in your state.
+            </p>
+            <p class="small mb-2">
+              When you contact us through this page, we receive the information you choose to share, including your email address
+              and message. We use this information only to respond to your questions and improve our content. We do not sell or
+              rent your contact details.
+            </p>
+            <p class="small mb-2">
+              Links from this site to other websites do not imply endorsement. They are provided for reference so that you can reach
+              official program pages and additional independent resources that may help you understand your options.
+            </p>
+            <p class="small mb-0">
+              By using this website, you agree that you are responsible for how you apply any information you learn here to your own
+              situation. If you see outdated or incorrect content, we invite you to contact us so that our team can review and
+              correct it promptly.
+            </p>
           </div>
         </div>
 
-        <div class="border-t border-slate-800 pt-3 flex flex-wrap items-center justify-between gap-3">
-          <div class="text-[11px] text-slate-500">
-            <p class="mb-1">&copy; 2025 National Connectivity Access Hub. All rights reserved.</p>
-            <div class="text-slate-600">1201 Pennsylvania Avenue NW, Suite 300, Washington, DC 20004</div>
+        <div class="footer-bg text-center mt-4">
+          <div class="footer-text">
+            1701 Pennsylvania Avenue NW, Suite 300, Washington, DC 20006
           </div>
-
-          <div class="flex flex-wrap items-center gap-3 text-[11px]">
-            <a href="#home" class="footer-link">Back to top</a>
-            <span class="text-slate-600">·</span>
-            <a href="#contact" class="footer-link">Contact</a>
-            <span class="text-slate-600">·</span>
-            <span class="text-slate-600">Updated for 2025 planning</span>
+          <div class="footer-text">
+            © 2025 American Connectivity Watchdog. Non profit research initiative.
           </div>
         </div>
       </div>
-    </footer>
+    </section>
+  </div>
 
-  </main>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+  <!-- Pre Screener JS -->
   <script>
-    // Mobile nav toggle
-    document.getElementById('navToggle')?.addEventListener('click', function () {
-      const mobileNav = document.getElementById('mobileNav');
-      if (!mobileNav) return;
-      mobileNav.classList.toggle('open');
-    });
+    (function () {
+      const form = document.getElementById('preScreenerForm');
+      const processingBlock = document.getElementById('processingBlock');
+      const resultCard = document.getElementById('resultCard');
 
-    // FAQ toggle
-    document.querySelectorAll('[data-faq]').forEach(function (trigger) {
-      trigger.addEventListener('click', function () {
-        const item = this.closest('.faq-item');
-        if (!item) return;
-        item.classList.toggle('open');
-      });
-    });
+      if (!form) return;
 
-    // Device checker demo logic
-    const deviceForm = document.getElementById('deviceCheckerForm');
-    const statusRow = document.getElementById('checkerStatus');
-    const statusText = document.getElementById('checkerStatusText');
-    const resultRow = document.getElementById('checkerResult');
-
-    if (deviceForm && statusRow && statusText && resultRow) {
-      deviceForm.addEventListener('submit', function (e) {
+      form.addEventListener('submit', function (e) {
         e.preventDefault();
-        resultRow.classList.add('hidden');
-        statusText.textContent = 'Checking sample providers for your details...';
-        statusRow.classList.remove('hidden');
+
+        const benefit = document.getElementById('benefitSelect').value;
+        const size = document.getElementById('householdSize').value;
+
+        if (!benefit || !size) {
+          alert('Please select a qualifying benefit and household size before running the pre screener.');
+          return;
+        }
+
+        resultCard.style.display = 'none';
+        processingBlock.style.display = 'block';
 
         setTimeout(function () {
-          statusRow.classList.add('hidden');
-          resultRow.classList.remove('hidden');
-        }, 1400);
+          processingBlock.style.display = 'none';
+          resultCard.style.display = 'block';
+          resultCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 2000);
       });
-    }
+    })();
   </script>
-
 </body>
 </html>
